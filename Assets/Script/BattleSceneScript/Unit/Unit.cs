@@ -4,11 +4,12 @@ using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
+    public string Team; // Init()에서 할당
     public UnitData Data;
     public Unit_Status Status;
     public Unit_Skill Skill;
 
-    public abstract void Init();
+    public abstract void Init(UnitData Data);
     public abstract void TurnStart();
     public abstract void TurnEnd();
     

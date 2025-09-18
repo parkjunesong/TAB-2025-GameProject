@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1654234331}
   - component: {fileID: 1654234332}
+  - component: {fileID: 1654234333}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -257,6 +258,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BattleManager
   PlayerUnits: []
   EnemyUnits: []
+  FrontPlayerUnit: {fileID: 0}
+  FrontEnemyUnit: {fileID: 0}
+--- !u!114 &1654234333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654234330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecf5294a2b87e541b3fceab5d78ead6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillManager
+  skillUi:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1811104327
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26420bc74eb9bcb4887222e88ff0ea83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PartyManager
-  PlayerUnits: []
+  PlayerUnits:
+  - {fileID: 0}
   EnemyUnits: []
 --- !u!4 &1811104329
 Transform:

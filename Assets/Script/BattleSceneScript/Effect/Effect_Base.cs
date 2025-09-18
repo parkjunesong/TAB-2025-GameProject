@@ -4,13 +4,32 @@ using UnityEngine;
 
 public abstract class Effect_Base
 {
-    public float Value;
     public Type Type;
+    public int Value;
+    public int Accuracy;
+    public int PP;
+    public int Priority;
+    public bool IsSelf;
 
-    public Effect_Base(float value, Type type)
+    public Effect_Base(Type type, int val, int acc, int pp, int pri, bool isSelf = false)
     {       
-        Value = value;
-        Type = type;       
+        Type = type;
+        Value = val;
+        Accuracy = acc;
+        PP = pp;
+        Priority = pri;
+        IsSelf = isSelf;
     }
-    public abstract void Execute(Unit caster);    
+    public abstract void Execute(Unit caster);  
+    
+    public Unit SetTarget(Unit caster)
+    {
+        if (IsSelf) return caster;
+        else
+        {
+            if (caster.Team == "Player") return BattleManager.Instance.FrontEnemyUnit;
+            if(caster.Team == "Enemy") return BattleManager.Instance.FrontPlayerUnit;
+            return null;
+        }     
+    }
 }
