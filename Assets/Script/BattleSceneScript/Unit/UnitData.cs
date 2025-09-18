@@ -11,4 +11,5 @@ public class UnitData : ScriptableObject
     public Type Type;
     public int AT, SP, HP, DF;
     public Sprite Front, Back;
+    public List<Skill_Base> SkillList = new();
 }

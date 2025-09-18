@@ -20,3 +20,5 @@ MonoBehaviour:
   DF: 25
   Front: {fileID: 0}
   Back: {fileID: 0}
+  SkillList:
+  - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
