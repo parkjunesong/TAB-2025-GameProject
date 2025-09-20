@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75706103213a91f4e963e468017b81b5, type: 3}
+  m_Name: Snivy
+  m_EditorClassIdentifier: Assembly-CSharp::UnitData
+  Name: "\uC8FC\uB9AC\uBE44\uC580"
+  Type: 4
+  AT: 45
+  SP: 63
+  HP: 45
+  DF: 55
+  FrontSprite: {fileID: 0}
+  BackSprite: {fileID: 8610258218038972542, guid: ef27578b73929434583858315bdf8a1d, type: 3}
+  SkillList:
+  - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
