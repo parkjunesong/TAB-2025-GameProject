@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
-    public string Team; // Init()¿¡¼­ ÇÒ´ç
+    public string Team; // Init()ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½
     public UnitData Data;
     public Unit_Status Status;
     public Unit_Skill Skill;
@@ -12,7 +12,7 @@ public abstract class Unit : MonoBehaviour
     public abstract void Init(UnitData Data);
     public abstract void TurnStart();
     public abstract void TurnEnd();
-    
+
     public void OnDamaged(float damage)
     {
         Status.OnDamaged(damage);
@@ -23,4 +23,5 @@ public abstract class Unit : MonoBehaviour
     {
         //BattleManager.Instance.OnUnitDied(this);
     }
+    
 }
