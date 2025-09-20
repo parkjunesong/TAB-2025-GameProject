@@ -12,8 +12,8 @@ public class BattleManager : MonoBehaviour
 
     public List<Unit> PlayerUnits = new();
     public List<Unit> EnemyUnits = new();
-    public Unit FrontPlayerUnit; // ÇÃ·¹ÀÌ¾î ¼±ºÀ Æ÷ÄÏ¸ó
-    public Unit FrontEnemyUnit; // Àû ¼±ºÀ Æ÷ÄÏ¸ó
+    public Unit FrontPlayerUnit; // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½
+    public Unit FrontEnemyUnit; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½
 
     void Awake()
     {
@@ -39,8 +39,8 @@ public class BattleManager : MonoBehaviour
         FrontPlayerUnit = PlayerUnits[0];
         FrontEnemyUnit = EnemyUnits[0];
 
-        // FrontPlayerUnit, FrontEnemyUnitÀÇ ÀÌ¹ÌÁö¸¦ È­¸é¿¡ Ç¥½ÃÇÏ´Â ÀÛ¾÷ ÇÊ¿ä
-        // FrontPlayerUnit.Data.BackSprite, FrontEnemyUnit.Data.FrontSprite·Î Á¢±Ù °¡´É
+        // FrontPlayerUnit, FrontEnemyUnitï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½é¿¡ Ç¥ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Û¾ï¿½ ï¿½Ê¿ï¿½
+        // FrontPlayerUnit.Data.BackSprite, FrontEnemyUnit.Data.FrontSpriteï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 
 
@@ -57,7 +57,7 @@ public class BattleManager : MonoBehaviour
     }
     public void ActionStart()
     {
-        // ¼±ºÀ Æ÷ÄÏ¸ó ½ºÇÇµå ºñ±³ÇØ¼­ Çàµ¿ ¼ø¼­ ¹èÁ¤
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Çµï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½àµ¿ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
     public void TurnEnd()
     {
