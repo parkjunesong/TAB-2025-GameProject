@@ -2,24 +2,24 @@ using UnityEngine;
 
 public class PlayerUnit : Unit
 {
-    public override void Init(UnitData data)
+    public override void Init(UnitData Data)
     {
         Team = "Player";
 
-        // 필요 없으면 그냥 this.Data = data; 해도 됨
-        this.Data = Instantiate(data);
 
-        // 스탯과 스킬 초기화
-        Status = new Unit_Status(this.Data);
-        Skill = new Unit_Skill(this);
+        UnitData data = Instantiate(Data);
+        Status = new Unit_Status(data);
+        Skill  = new Unit_Skill(this);
 
-        // 플레이어 유닛은 Back 스프라이트 사용
         var sr = GetComponent<SpriteRenderer>();
-        if (sr != null && this.Data != null && this.Data.BackSprite != null)
-            sr.sprite = this.Data.BackSprite;
+        if (sr != null && data != null)
+        {
+            if (data.BackSprite != null)          sr.sprite = data.BackSprite;          // 필드명이 Back인 경우
+            else if (data.BackSprite != null) sr.sprite = data.BackSprite;    // 필드명이 BackSprite인 경우
+        }
     }
 
     public override void TurnStart() { }
     public override void TurnEnd() { }
-    
 }
+

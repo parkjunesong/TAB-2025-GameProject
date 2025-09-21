@@ -2,19 +2,21 @@ using UnityEngine;
 
 public class EnemyUnit : Unit
 {
-    public override void Init(UnitData data)
+    public override void Init(UnitData Data)
     {
         Team = "Enemy";
 
-        this.Data = Instantiate(data);
+        UnitData data = Instantiate(Data);
 
-        Status = new Unit_Status(this.Data);
+        Status = new Unit_Status(data);
         Skill  = new Unit_Skill(this);
 
-        // 적 유닛은 Front 스프라이트 사용
         var sr = GetComponent<SpriteRenderer>();
-        if (sr != null && this.Data != null && this.Data.FrontSprite != null)
-            sr.sprite = this.Data.FrontSprite;
+        if (sr != null && data != null)
+        {
+            if (data.FrontSprite != null)            sr.sprite = data.FrontSprite;         
+            else if (data.FrontSprite != null) sr.sprite = data.FrontSprite;    
+        }
     }
 
     public override void TurnStart() { }
