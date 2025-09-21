@@ -15,7 +15,6 @@ public class EnemyUnit : Unit
         if (sr != null && data != null)
         {
             if (data.FrontSprite != null)            sr.sprite = data.FrontSprite;         
-            else if (data.FrontSprite != null) sr.sprite = data.FrontSprite;    
         }
     }
 
