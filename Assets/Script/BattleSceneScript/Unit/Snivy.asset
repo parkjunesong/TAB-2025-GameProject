@@ -18,7 +18,7 @@ MonoBehaviour:
   SP: 63
   HP: 45
   DF: 55
-  FrontSprite: {fileID: 0}
+  FrontSprite: {fileID: 8610258218038972542, guid: ef27578b73929434583858315bdf8a1d, type: 3}
   BackSprite: {fileID: 8610258218038972542, guid: ef27578b73929434583858315bdf8a1d, type: 3}
   SkillList:
   - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}

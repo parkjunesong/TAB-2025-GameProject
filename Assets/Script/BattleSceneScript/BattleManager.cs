@@ -20,6 +20,24 @@ public class BattleManager : MonoBehaviour
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;     
     }
+    void Start()
+    {
+        BattleStart(); 
+    }
+    private Unit CreateAndRegisterUnit(UnitData data, bool isPlayer)
+    {
+        GameObject go = UnitPrefab != null
+            ? Instantiate(UnitPrefab)
+            : new GameObject((data != null ? data.Name : "Unit"));
+
+        Unit unit = isPlayer ? go.AddComponent<PlayerUnit>() : go.AddComponent<EnemyUnit>();
+        unit.Init(data);
+
+        if (isPlayer) PlayerUnits.Add(unit);
+        else          EnemyUnits.Add(unit);
+
+        return unit;
+    }
 
     public void BattleStart()
     {
@@ -29,12 +47,24 @@ public class BattleManager : MonoBehaviour
             Unit unit = Instantiate(UnitPrefab).AddComponent<PlayerUnit>();
             unit.Init(data);
             PlayerUnits.Add(unit);
+            var sr = unit.GetComponent<SpriteRenderer>();
+            if (sr != null && data != null)
+            {
+                if (data.BackSprite != null)
+                    sr.sprite = data.BackSprite;
+            }
         }
         foreach (UnitData data in BUM.EnemyUnitData)
         {
             Unit unit = Instantiate(UnitPrefab).AddComponent<EnemyUnit>();
             unit.Init(data);
             EnemyUnits.Add(unit);
+            var sr = unit.GetComponent<SpriteRenderer>();
+            if (sr != null && data != null)
+            {
+                if (data.FrontSprite != null)
+                    sr.sprite = data.FrontSprite;
+            }
         }
         FrontPlayerUnit = PlayerUnits[0];
         FrontEnemyUnit = EnemyUnits[0];
@@ -52,7 +82,6 @@ public class BattleManager : MonoBehaviour
     {
         FrontPlayerUnit.TurnStart();
         FrontEnemyUnit.TurnStart();
-
         ActionStart();
     }
     public void ActionStart()
@@ -63,9 +92,9 @@ public class BattleManager : MonoBehaviour
     {
         FrontPlayerUnit.TurnEnd();
         FrontEnemyUnit.TurnEnd();
-
         TurnStart();
-    }   
+    }  
+     
 
     public List<Unit> allUnits()
     {
