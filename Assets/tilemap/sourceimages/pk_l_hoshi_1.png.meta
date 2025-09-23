@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 5996c1cd35ebffe409dd31a4fb168578
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2556457959767503966
+    second: pk_l_hoshi_1_0
+  - first:
+      213: -3872043996882265122
+    second: pk_l_hoshi_1_1
+  - first:
+      213: 5328530018835030802
+    second: pk_l_hoshi_1_2
+  - first:
+      213: 5473124740813148764
+    second: pk_l_hoshi_1_3
+  - first:
+      213: -3793510215238856331
+    second: pk_l_hoshi_1_4
+  - first:
+      213: 8013816762212253368
+    second: pk_l_hoshi_1_5
+  - first:
+      213: 2336671612815068859
+    second: pk_l_hoshi_1_6
+  - first:
+      213: -218610842936840687
+    second: pk_l_hoshi_1_7
+  - first:
+      213: -3169650397260678896
+    second: pk_l_hoshi_1_8
+  - first:
+      213: -5823679308391923119
+    second: pk_l_hoshi_1_9
+  - first:
+      213: 128648810102375663
+    second: pk_l_hoshi_1_10
+  - first:
+      213: 9146522379959735558
+    second: pk_l_hoshi_1_11
+  - first:
+      213: -5170924629469981141
+    second: pk_l_hoshi_1_12
+  - first:
+      213: 7617645616308583836
+    second: pk_l_hoshi_1_13
+  - first:
+      213: -7877288110354009223
+    second: pk_l_hoshi_1_14
+  - first:
+      213: 8375314078262691072
+    second: pk_l_hoshi_1_15
+  - first:
+      213: 1445565401605474464
+    second: pk_l_hoshi_1_16
+  - first:
+      213: 8258644866617534725
+    second: pk_l_hoshi_1_17
+  - first:
+      213: -8212831929677095446
+    second: pk_l_hoshi_1_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 103
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab86d0c703a58cd0800000000000000
+      internalID: -2556457959767503966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 95
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb1623ff7cb34ac0800000000000000
+      internalID: -3872043996882265122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213eaa302ddb2f940800000000000000
+      internalID: 5328530018835030802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52d19334f174fb40800000000000000
+      internalID: 5473124740813148764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 87
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5715fd0ee8eba5bc0800000000000000
+      internalID: -3793510215238856331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 81
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be7bbed2ebc63f60800000000000000
+      internalID: 8013816762212253368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 82
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbec49e93768d6020800000000000000
+      internalID: 2336671612815068859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e63bab89657fcf0800000000000000
+      internalID: -218610842936840687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 74
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019f919d1c32304d0800000000000000
+      internalID: -3169650397260678896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 68
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152c18136822e2fa0800000000000000
+      internalID: -5823679308391923119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 59
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4cde2496d09c100800000000000000
+      internalID: 128648810102375663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 59
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60519abe4a9feee70800000000000000
+      internalID: 9146522379959735558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b269f1c327f2d38b0800000000000000
+      internalID: -5170924629469981141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d72e8f35057b960800000000000000
+      internalID: 7617645616308583836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973f0f403304ea290800000000000000
+      internalID: -7877288110354009223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 22
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0050d25a7c71b3470800000000000000
+      internalID: 8375314078262691072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 31
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a80a46e21eaf0410800000000000000
+      internalID: 1445565401605474464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50967d000c99c9270800000000000000
+      internalID: 8258644866617534725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_l_hoshi_1_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 3
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed5c979fd8260e80800000000000000
+      internalID: -8212831929677095446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pk_l_hoshi_1_0: -2556457959767503966
+      pk_l_hoshi_1_1: -3872043996882265122
+      pk_l_hoshi_1_10: 128648810102375663
+      pk_l_hoshi_1_11: 9146522379959735558
+      pk_l_hoshi_1_12: -5170924629469981141
+      pk_l_hoshi_1_13: 7617645616308583836
+      pk_l_hoshi_1_14: -7877288110354009223
+      pk_l_hoshi_1_15: 8375314078262691072
+      pk_l_hoshi_1_16: 1445565401605474464
+      pk_l_hoshi_1_17: 8258644866617534725
+      pk_l_hoshi_1_18: -8212831929677095446
+      pk_l_hoshi_1_2: 5328530018835030802
+      pk_l_hoshi_1_3: 5473124740813148764
+      pk_l_hoshi_1_4: -3793510215238856331
+      pk_l_hoshi_1_5: 8013816762212253368
+      pk_l_hoshi_1_6: 2336671612815068859
+      pk_l_hoshi_1_7: -218610842936840687
+      pk_l_hoshi_1_8: -3169650397260678896
+      pk_l_hoshi_1_9: -5823679308391923119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
