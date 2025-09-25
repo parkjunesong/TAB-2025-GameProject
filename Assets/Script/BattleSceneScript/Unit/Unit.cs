@@ -12,6 +12,7 @@ public abstract class Unit : MonoBehaviour
     public abstract void Init(UnitData Data);
     public abstract void TurnStart();
     public abstract void TurnEnd();
+    public abstract IEnumerator Action();
     
     public void OnDamaged(float damage)
     {

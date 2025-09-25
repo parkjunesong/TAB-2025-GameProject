@@ -46,7 +46,6 @@ public class BattleManager : MonoBehaviour
         FrontEnemyUnit.gameObject.SetActive(true);
 
 
-
         TurnStart();
     }
 
@@ -54,11 +53,21 @@ public class BattleManager : MonoBehaviour
     {
         FrontPlayerUnit.TurnStart();
         FrontEnemyUnit.TurnStart();
-        ActionStart();
+        StartCoroutine(ActionStart());
     }
-    public void ActionStart()
+    IEnumerator ActionStart()
     {
-        
+        if (FrontPlayerUnit.Status.SP >= FrontEnemyUnit.Status.SP)
+        {
+            yield return StartCoroutine(FrontPlayerUnit.Action());
+            yield return StartCoroutine(FrontEnemyUnit.Action());
+        }
+        else
+        {
+            yield return StartCoroutine(FrontEnemyUnit.Action());
+            yield return StartCoroutine(FrontPlayerUnit.Action());
+        }
+        TurnEnd();
     }
     public void TurnEnd()
     {
