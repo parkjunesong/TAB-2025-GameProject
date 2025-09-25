@@ -12,8 +12,8 @@ public class BattleManager : MonoBehaviour
 
     public List<Unit> PlayerUnits = new();
     public List<Unit> EnemyUnits = new();
-    public Unit FrontPlayerUnit; // �÷��̾� ���� ���ϸ�
-    public Unit FrontEnemyUnit; // �� ���� ���ϸ�
+    public Unit FrontPlayerUnit;
+    public Unit FrontEnemyUnit;
 
     void Awake()
     {
@@ -22,21 +22,7 @@ public class BattleManager : MonoBehaviour
     }
     void Start()
     {
-        BattleStart(); 
-    }
-    private Unit CreateAndRegisterUnit(UnitData data, bool isPlayer)
-    {
-        GameObject go = UnitPrefab != null
-            ? Instantiate(UnitPrefab)
-            : new GameObject((data != null ? data.Name : "Unit"));
-
-        Unit unit = isPlayer ? go.AddComponent<PlayerUnit>() : go.AddComponent<EnemyUnit>();
-        unit.Init(data);
-
-        if (isPlayer) PlayerUnits.Add(unit);
-        else          EnemyUnits.Add(unit);
-
-        return unit;
+        BattleStart();
     }
 
     public void BattleStart()
@@ -47,31 +33,17 @@ public class BattleManager : MonoBehaviour
             Unit unit = Instantiate(UnitPrefab).AddComponent<PlayerUnit>();
             unit.Init(data);
             PlayerUnits.Add(unit);
-            var sr = unit.GetComponent<SpriteRenderer>();
-            if (sr != null && data != null)
-            {
-                if (data.BackSprite != null)
-                    sr.sprite = data.BackSprite;
-            }
         }
         foreach (UnitData data in BUM.EnemyUnitData)
         {
             Unit unit = Instantiate(UnitPrefab).AddComponent<EnemyUnit>();
             unit.Init(data);
-            EnemyUnits.Add(unit);
-            var sr = unit.GetComponent<SpriteRenderer>();
-            if (sr != null && data != null)
-            {
-                if (data.FrontSprite != null)
-                    sr.sprite = data.FrontSprite;
-            }
+            EnemyUnits.Add(unit);           
         }
         FrontPlayerUnit = PlayerUnits[0];
+        FrontPlayerUnit.gameObject.SetActive(true);
         FrontEnemyUnit = EnemyUnits[0];
-
-        // FrontPlayerUnit, FrontEnemyUnit�� �̹����� ȭ�鿡 ǥ���ϴ� �۾� �ʿ�
-        // FrontPlayerUnit.Data.BackSprite, FrontEnemyUnit.Data.FrontSprite�� ���� ����
-
+        FrontEnemyUnit.gameObject.SetActive(true);
 
 
 
@@ -86,7 +58,7 @@ public class BattleManager : MonoBehaviour
     }
     public void ActionStart()
     {
-        // ���� ���ϸ� ���ǵ� ���ؼ� �ൿ ���� ����
+        
     }
     public void TurnEnd()
     {

@@ -1,16 +1,17 @@
 using UnityEngine;
 public class EnemyUnit : Unit
 {
-    public override void Init(UnitData Data)
+    public override void Init(UnitData data)
     {
         Team = "Enemy";
-        UnitData data = Instantiate<UnitData>(Data);
-        this.Data = data;
-
-        Status = new Unit_Status(data);
+        Data = Instantiate(data);
+        Status = new Unit_Status(Data);
         Skill  = new Unit_Skill(this);
-        name   = data.Name;
-  
+        GetComponent<SpriteRenderer>().sprite = data.FrontSprite;
+
+        transform.position = new Vector2(5, 2);
+        transform.localScale = new Vector3(6, 8, 1);
+        gameObject.SetActive(false);
     }
     public override void TurnStart() { }
     public override void TurnEnd() { }

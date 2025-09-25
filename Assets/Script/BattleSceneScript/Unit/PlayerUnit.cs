@@ -1,16 +1,18 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 public class PlayerUnit : Unit
 {
-    public override void Init(UnitData Data)
+    public override void Init(UnitData data)
     {
         Team = "Player";
-        UnitData data = Instantiate<UnitData>(Data);
-        this.Data = data;
+        Data = Instantiate(data);
+        Status = new Unit_Status(Data);
+        Skill = new Unit_Skill(this);
+        GetComponent<SpriteRenderer>().sprite = data.BackSprite;
 
-        Status = new Unit_Status(data);
-        Skill  = new Unit_Skill(this);
-        name   = data.Name;
-        
+        transform.position = new Vector2(-3.5f, -2);
+        transform.localScale = new Vector3(8, 10, 1);
+        gameObject.SetActive(false);
     }
     public override void TurnStart() { }
     public override void TurnEnd() { }
