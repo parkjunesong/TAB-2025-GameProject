@@ -5,6 +5,7 @@ public class PlayerUnit : Unit
 {
     public override void Init(UnitData data)
     {
+        isDead = false;
         Team = "Player";
         Data = Instantiate(data);
         Status = new Unit_Status(Data);
@@ -24,6 +25,13 @@ public class PlayerUnit : Unit
 
         // 스킬, 가방, 교체, 도망
         yield return new WaitForSeconds(1f);
+    }
+
+    public override void OnDied()
+    {
+        isDead = true;
+        gameObject.SetActive(false);
+        BattleManager.Instance.OnUnitDied(BattleManager.Instance.PlayerUnits);
     }
 }
 

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
-    public string Team; // Init()에서 할당
+    public bool isDead;
+    public string Team;
     public UnitData Data;
     public Unit_Status Status;
     public Unit_Skill Skill;
@@ -13,15 +14,15 @@ public abstract class Unit : MonoBehaviour
     public abstract void TurnStart();
     public abstract void TurnEnd();
     public abstract IEnumerator Action();
-    
+    public abstract void OnDied();
+
+
     public void OnDamaged(float damage)
     {
         Status.OnDamaged(damage);
 
         if (Status.HP <= 0) OnDied();
     }
-    public void OnDied()
-    {
-        //BattleManager.Instance.OnUnitDied(this);
-    }
+    
+
 }

@@ -27,8 +27,8 @@ public abstract class Effect_Base
         if (IsSelf) return caster;
         else
         {
-            if (caster.Team == "Player") return BattleManager.Instance.FrontEnemyUnit;
-            if(caster.Team == "Enemy") return BattleManager.Instance.FrontPlayerUnit;
+            if (caster.Team == "Player") return BattleManager.Instance.EnemyUnits[0];
+            if(caster.Team == "Enemy") return BattleManager.Instance.PlayerUnits[0];
             return null;
         }     
     }
