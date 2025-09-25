@@ -5,13 +5,23 @@ using UnityEngine;
 public class BattleUnitManager : MonoBehaviour
 {
     // Field Scene -> Battle Scene
-    // ÇÃ·¹ÀÌ¾î¿Í »ó´ë¹æÀÇ Æ÷ÄÏ¸ó ÆÄÆ¼ µ¥ÀÌÅÍ Àü´Þ¿ë ½ºÅ©¸³Æ®
+    // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½Æ¼ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þ¿ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®
 
     public List<UnitData> PlayerUnitData = new();
     public List<UnitData> EnemyUnitData = new();
+    public int PlayerSelectIndex = 0;
+    public int EnemySelectIndex  = 0;
+
+    public UnitData GetPlayerSelected() =>
+        (PlayerUnitData != null && PlayerUnitData.Count > PlayerSelectIndex)
+            ? PlayerUnitData[PlayerSelectIndex] : null;
+
+    public UnitData GetEnemySelected() =>
+        (EnemyUnitData != null && EnemyUnitData.Count > EnemySelectIndex)
+            ? EnemyUnitData[EnemySelectIndex] : null;
 
     void Awake()
     {
-        DontDestroyOnLoad(this); // ¾À ÀüÈ¯ ½Ã À¯Áö
+        DontDestroyOnLoad(this); // ï¿½ï¿½ ï¿½ï¿½È¯ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 }
