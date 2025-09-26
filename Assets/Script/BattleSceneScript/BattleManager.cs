@@ -122,7 +122,6 @@ public class BattleManager : MonoBehaviour
 
 
 
-
     public List<Unit> allUnits()
     {
         List<Unit> units = new();
