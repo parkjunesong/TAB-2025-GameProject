@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a112ca1be1a81244d90151520eae6cdd
+guid: a87f6097eb51abd4b8257e215ae82c5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -563611247177896498
-    second: ki02ax_0
+      213: 5679814079678787354
+    second: road_c2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ki02ax_0
+      name: road_c2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 15
         y: 0
-        width: 32
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 17
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecdeb8c8e86ad28f0800000000000000
-      internalID: -563611247177896498
+      spriteID: a1f248100d0c2de40800000000000000
+      internalID: 5679814079678787354
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 68a60bbd1b05ca04dbea86f43aafd640
+    spriteID: 7b31800ba7d234d4abe60f314b9bda54
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ki02ax_0: -563611247177896498
+      road_c2_0: 5679814079678787354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
