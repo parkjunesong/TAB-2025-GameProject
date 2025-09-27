@@ -15,10 +15,12 @@ public class EnemyUnit : Unit
         transform.position = new Vector2(5, 2);
         transform.localScale = new Vector3(5, 7, 1);
         gameObject.SetActive(false);
+        name = Team + " " + Data.Name;
+
     }
     public override void TurnStart() { }
     public override void TurnEnd() { }
-    public override IEnumerator Action()
+    public IEnumerator Action()
     {
         Debug.Log("enemy action");
 

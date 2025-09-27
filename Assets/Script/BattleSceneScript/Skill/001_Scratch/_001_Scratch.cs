@@ -6,7 +6,7 @@ public class _001_Scratch : Skill_Base
 {
     public override void SetEffect()
     {
-        Effect_Damage effect = new Effect_Damage(40, 100, 0);
+        Effect_Damage effect = new Effect_Damage(40, 100, 0, Skill_Type);
         EffectList.Add(effect);
     }
     public override void Execute(Unit caster)

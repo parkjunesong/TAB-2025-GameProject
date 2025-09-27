@@ -13,6 +13,7 @@ public class BattleManager : MonoBehaviour
 
     public List<Unit> PlayerUnits = new();
     public List<Unit> EnemyUnits = new();
+    public bool isPlayerActioned;
 
     void Awake()
     {
@@ -22,6 +23,8 @@ public class BattleManager : MonoBehaviour
     void Start()
     {
         BattleStart();
+        GetComponent<SkillManager>().UpdateUi();
+        GetComponent<PokemonEntryManager>().UpdateUi();
     }
 
     public void BattleStart()
@@ -49,20 +52,26 @@ public class BattleManager : MonoBehaviour
     {
         PlayerUnits[0].TurnStart();
         EnemyUnits[0].TurnStart();
-        //StartCoroutine(ActionStart());
+        StartCoroutine(ActionStart());
     }
     IEnumerator ActionStart()
     {
+        isPlayerActioned = false;
         if (PlayerUnits[0].Status.SP >= EnemyUnits[0].Status.SP)
         {
-            yield return StartCoroutine(PlayerUnits[0].Action());
-            yield return StartCoroutine(EnemyUnits[0].Action());
+            yield return new WaitUntil(() => isPlayerActioned);
+
+            yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
+            GetComponent<PokemonEntryManager>().UpdateUi();
         }
         else
         {
-            yield return StartCoroutine(EnemyUnits[0].Action());
-            yield return StartCoroutine(PlayerUnits[0].Action());
+            yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
+            GetComponent<PokemonEntryManager>().UpdateUi();
+
+            yield return new WaitUntil(() => isPlayerActioned);
         }
+        yield return new WaitForSeconds(3f);
         TurnEnd();
     }
     public void TurnEnd()
@@ -81,17 +90,6 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("Player Win");
         }
-    }
-    
-
-
-    public void ChangeUnit(int index, List<Unit> targetList)
-    {      
-        Unit targetUnit = targetList[index];
-        if (targetUnit.isDead || targetUnit == targetList[0]) return;
-
-        targetList[index] = targetList[0];
-        targetList[0] = targetUnit;
     }
 
     public void OnUnitDied(List<Unit> targetList)
@@ -116,10 +114,9 @@ public class BattleManager : MonoBehaviour
             targetList.Remove(tmp);
             targetList.Insert(0, tmp);
             targetList[0].gameObject.SetActive(true);
+            GetComponent<PokemonEntryManager>().UpdateUi();
         }
     }
-
-
 
     public List<Unit> allUnits()
     {

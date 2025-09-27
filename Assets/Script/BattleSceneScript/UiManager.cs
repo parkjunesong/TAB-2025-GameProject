@@ -8,6 +8,7 @@ public class UiManager : MonoBehaviour
     public GameObject UiScreen;
     public GameObject MainButtons;
     public GameObject FightButtons;
+    public GameObject PokemonButtons;
     private float hoverTimer;
 
     void Awake()
@@ -22,16 +23,20 @@ public class UiManager : MonoBehaviour
         {
             hoverTimer += Time.deltaTime;
 
-            if (hoverTimer >= 0.5f && !UiScreen.activeSelf) ChangeUiScreenActiveState(true);
+            if (hoverTimer >= 0.5f && !UiScreen.activeSelf) 
+            { 
+                MainButton(); 
+                ChangeUiScreenActiveState(true); 
+            }
         }
         else if (Input.mousePosition.y >= Screen.height * 0.8f)
         {
             hoverTimer += Time.deltaTime;
 
             if (hoverTimer >= 0.5f && UiScreen.activeSelf) 
-            { 
+            {
+                MainButton();
                 ChangeUiScreenActiveState(false);
-                MainButton();        
             }
         }
         else hoverTimer = 0f;      
@@ -44,6 +49,7 @@ public class UiManager : MonoBehaviour
     {
         MainButtons.SetActive(true);
         FightButtons.SetActive(false);
+        PokemonButtons.SetActive(false);
     }
     public void FightButton()
     {
@@ -60,6 +66,7 @@ public class UiManager : MonoBehaviour
     }
     public void PokemonButton()
     {
-        Debug.Log("p");
+        MainButtons.SetActive(false);
+        PokemonButtons.SetActive(true);
     }
 }

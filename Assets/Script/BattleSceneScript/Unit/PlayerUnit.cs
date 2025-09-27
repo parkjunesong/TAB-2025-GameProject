@@ -15,18 +15,10 @@ public class PlayerUnit : Unit
         transform.position = new Vector2(-3.5f, -2);
         transform.localScale = new Vector3(8, 10, 1);
         gameObject.SetActive(false);
+        name = Team + " " + Data.Name;
     }
     public override void TurnStart() { }
     public override void TurnEnd() { }
-
-    public override IEnumerator Action()
-    {
-        Debug.Log("player action");
-
-        // 스킬, 가방, 교체, 도망
-        yield return new WaitForSeconds(1f);
-    }
-
     public override void OnDied()
     {
         isDead = true;

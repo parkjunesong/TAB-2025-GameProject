@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75706103213a91f4e963e468017b81b5, type: 3}
-  m_Name: Snivy
+  m_Name: Snivy 1
   m_EditorClassIdentifier: Assembly-CSharp::UnitData
-  Name: "\uC8FC\uB9AC\uBE44\uC5801"
+  Name: "\uC8FC\uB9AC\uBE44\uC5802"
   Type: 4
-  _AT: 45
-  _SP: 63
-  _HP: 45
-  _DF: 55
+  AT: 45
+  SP: 63
+  HP: 45
+  DF: 55
   FrontSprite: {fileID: -2690792559708188323, guid: c5583f015e0968e4cb94529223c7f81d, type: 3}
   BackSprite: {fileID: -4571828015118065507, guid: 54a9227bbfec73048af66ec1366aa8f0, type: 3}
   SkillList:

@@ -9,9 +9,9 @@ public class SkillManager : MonoBehaviour
 {
     public GameObject[] skillUi = new GameObject[4];
 
-    void Start()
+    public void UpdateUi()
     {
-        for (int i = 0; i< 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             SkillData skill = BattleManager.Instance.PlayerUnits[0].Skill.assignedSkills[i];
             Transform content = skillUi[i].transform.GetChild(0).GetChild(0);
@@ -22,9 +22,12 @@ public class SkillManager : MonoBehaviour
             content.GetChild(3).GetComponentInChildren<Text>().text = skill.Skill.Skill_Type.Name;
         }
     }
+
     public void UseSkillNo(int i)
     {
         BattleManager.Instance.PlayerUnits[0].Skill.UseSkillNo(i);
         UiManager.Instance.ChangeUiScreenActiveState(false);
-    }
+
+        BattleManager.Instance.isPlayerActioned = true;
+    }  
 }

@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class Unit_Status
 {
-    public string Name;
+    public int Level;
     public Type Type;
     public int AT, SP, HP, DF;
-    private int maxHP;
+    public int maxHP;
 
-    public Unit_Status(UnitData data)
+    public Unit_Status(UnitData data, int level = 1)
     {
-        Name = data.Name;
+        Level = level;
         Type = data.Type;
-        AT = data.AT;
-        SP = data.SP;
-        HP = data.HP;
+        AT = (int)((data._AT * 2) * (Level / 100f)) + 10;
+        SP = (int)((data._SP * 2) * (Level / 100f)) + 10;
+        HP = (int)((data._HP * 2 + 100) * (Level / 100f)) + 10;
+        DF = (int)((data._DF * 2) * (Level / 100f)) + 10;
         maxHP = HP;
-        DF = data.DF;
     }
 
     public void OnDamaged(float damage)
     {
-        //타입상성 계산
-
-        HP -= (int)(damage * 100 / (100 + DF));       
+        HP -= (int)((damage / DF) / 50f + 2);
     }
 }
