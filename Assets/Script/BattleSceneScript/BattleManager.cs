@@ -26,7 +26,7 @@ public class BattleManager : MonoBehaviour
 
     public void BattleStart()
     {
-        BattleUnitManager BUM = GameObject.Find("BattleUnitManager").GetComponent<BattleUnitManager>();
+        BattleUnitManager BUM = GameObject.Find("Pokemon & Inventory Data").GetComponent<BattleUnitManager>();
         foreach (UnitData data in BUM.PlayerUnitData)
         {
             Unit unit = Instantiate(UnitPrefab).AddComponent<PlayerUnit>();
@@ -41,7 +41,6 @@ public class BattleManager : MonoBehaviour
         }
         PlayerUnits[0].gameObject.SetActive(true);
         EnemyUnits[0].gameObject.SetActive(true);
-
 
         TurnStart();
     }
