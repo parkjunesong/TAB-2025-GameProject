@@ -50,7 +50,7 @@ public class BattleManager : MonoBehaviour
     {
         PlayerUnits[0].TurnStart();
         EnemyUnits[0].TurnStart();
-        StartCoroutine(ActionStart());
+        //StartCoroutine(ActionStart());
     }
     IEnumerator ActionStart()
     {

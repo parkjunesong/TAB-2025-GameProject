@@ -4,19 +4,15 @@ using UnityEngine;
 
 public abstract class Effect_Base
 {
-    public Type Type;
     public int Value;
     public int Accuracy;
-    public int PP;
     public int Priority;
     public bool IsSelf;
 
-    public Effect_Base(Type type, int val, int acc, int pp, int pri, bool isSelf = false)
+    public Effect_Base(int val, int acc, int pri, bool isSelf = false)
     {       
-        Type = type;
         Value = val;
         Accuracy = acc;
-        PP = pp;
         Priority = pri;
         IsSelf = isSelf;
     }

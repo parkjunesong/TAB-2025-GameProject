@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public abstract class Skill_Base : ScriptableObject
 {
+    public TypeData Skill_Type;
+    public int Skill_MaxPP;
     public string Skill_Name;
     public Sprite Skill_Icon;
     public AudioSource Skill_Sound;

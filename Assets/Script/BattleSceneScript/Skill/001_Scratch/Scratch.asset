@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1431e32442690544db378a7f4d6ccde4, type: 3}
   m_Name: Scratch
   m_EditorClassIdentifier: Assembly-CSharp::OneEffectSkill
+  Skill_Type: {fileID: 11400000, guid: 18a20d9e15f56a04fb2660538abbb89d, type: 2}
+  Skill_MaxPP: 40
   Skill_Name: Scratch
   Skill_Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   Skill_Sound: {fileID: 0}
