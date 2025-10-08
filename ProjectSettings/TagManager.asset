@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 3
   tags:
   - Snivy
+  - Menu
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - MenuZone
   - Water
   - UI
   - 
