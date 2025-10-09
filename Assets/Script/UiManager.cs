@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor;
 
 public class UiManager : MonoBehaviour
 {
@@ -9,7 +10,14 @@ public class UiManager : MonoBehaviour
     public GameObject MainButtons;
     public GameObject FightButtons;
     public GameObject PokemonButtons;
+    public GameObject BagButtons;
+    public GameObject ToolsContent;     
+    public GameObject RecoveryContent;  
+    public GameObject PokeballsContent; 
+    public GameObject TMsContent;
+    
     private float hoverTimer;
+    
 
     void Awake()
     {
@@ -58,7 +66,27 @@ public class UiManager : MonoBehaviour
     }
     public void BagButton()
     {
-        Debug.Log("b");
+        MainButtons.SetActive(false);
+        BagButtons.SetActive(true);
+    }
+    public void ShowTools()
+    {
+        ToolsContent.SetActive(true);
+    }
+
+    public void ShowRecovery()
+    {
+        RecoveryContent.SetActive(true);
+    }
+
+    public void ShowPokeballs()
+    {
+        PokeballsContent.SetActive(true);
+    }
+
+    public void ShowTMs()
+    {
+        TMsContent.SetActive(true);
     }
     public void RunButton()
     {
