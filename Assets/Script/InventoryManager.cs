@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+
 
 public class InventorySlot
 {
@@ -14,6 +17,8 @@ public class InventoryManager : MonoBehaviour
 
     public List<InventorySlot> Inventory = new();
     public int maxSlots = 20;
+    public Text pokeballText;
+    [SerializeField] private string targetItemName = "포켓몬볼";
 
     void Awake()
     {
@@ -22,6 +27,19 @@ public class InventoryManager : MonoBehaviour
 
         DontDestroyOnLoad(this);
     }
+    void Start()
+    {
+        // 테스트용 포켓몬볼 5개 추가
+        var pokeballData = ScriptableObject.CreateInstance<ItemData>();
+        pokeballData.Name = targetItemName; // "포켓몬볼"
+
+        Inventory.Add(new InventorySlot { item = pokeballData, quantity = 5 });
+
+        UpdatePokeballUI(); // UI 갱신
+    }
+
+
+
 
     private Predicate<InventorySlot> FindItem(ItemData targetItem)
     {
@@ -50,7 +68,19 @@ public class InventoryManager : MonoBehaviour
         if (slot != null && slot.quantity >= 1) //아이템 수가 충분하면
         {
             slot.quantity -= 1;
-            if (slot.quantity == 0) Inventory.Remove(slot);        
+            if (slot.quantity == 0) Inventory.Remove(slot);
         }
+    }
+    private void UpdatePokeballUI()
+    {
+        if (pokeballText == null) { Debug.LogError("[Inv] pokeballText is NULL"); return; }
+
+        int count = 0;
+        foreach (var slot in Inventory)
+            if (slot.item != null && slot.item.Name == targetItemName)
+                count += slot.quantity;   // 슬롯이 나뉠 수 있으니 누적이 안전
+
+        pokeballText.text = "포켓몬볼 " + count;
+        Debug.Log($"[Inv] UI -> {pokeballText.text} (obj: {pokeballText.gameObject.name})");
     }
 }
