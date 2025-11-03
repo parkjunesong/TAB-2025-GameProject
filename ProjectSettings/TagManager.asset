@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Snivy
   - Menu
+  - MovingObject
   layers:
   - Default
   - TransparentFX

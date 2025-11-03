@@ -1,60 +1,49 @@
 using UnityEngine;
+using System.Collections;
 
-public class NPCMovement : MonoBehaviour
-{
-    public float moveSpeed = 2f;
-    public float moveTime = 2f;   
-    public float waitTime = 2f;  
+public enum NPCMoveFrequency { stop, sometimes, normal, often }
 
-    private float moveCounter;
-    private float waitCounter;
-    private Vector2 moveDirection;
-
-    private Rigidbody2D rb;
+public class NPCMovement : MovingObject
+{   
+    public NPCMoveFrequency frequency;
+    private Coroutine moveStepCoroutine;
 
     void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-
-        waitCounter = waitTime;
-        moveCounter = moveTime;
-        ChooseDirection();
+    {    
+        StartCoroutine(MoveRoutine());
     }
-
-    void Update()
+    IEnumerator MoveRoutine()
     {
-        if (moveCounter > 0)
+        if (!isMoving) moveStepCoroutine = StartCoroutine(MoveStep(ChooseDirection()));
+
+        switch (frequency)
         {
-            moveCounter -= Time.deltaTime;
-            rb.linearVelocity = moveDirection * moveSpeed;
-
-            if (moveCounter <= 0)
-            {
-                waitCounter = waitTime;
-            }
+            case NPCMoveFrequency.stop:
+                StopCoroutine(MoveRoutine());
+                break;
+            case NPCMoveFrequency.sometimes:
+                yield return new WaitForSeconds(6f);
+                break;
+            case NPCMoveFrequency.normal:
+                yield return new WaitForSeconds(4f);
+                break;
+            case NPCMoveFrequency.often:
+                yield return new WaitForSeconds(2f);
+                break;
         }
-        else if (waitCounter > 0)
-        {
-            waitCounter -= Time.deltaTime;
-            rb.linearVelocity = Vector2.zero;
+        StartCoroutine(MoveRoutine());
+    }   
 
-            if (waitCounter <= 0)
-            {
-                moveCounter = moveTime;
-                ChooseDirection();
-            }
-        }
-    }
-
-    void ChooseDirection()
+    Vector2 ChooseDirection()
     {
         int dir = Random.Range(0, 4);
         switch (dir)
         {
-            case 0: moveDirection = Vector2.up; break;
-            case 1: moveDirection = Vector2.down; break;
-            case 2: moveDirection = Vector2.left; break;
-            case 3: moveDirection = Vector2.right; break;
+            case 0: return Vector2.up; 
+            case 1: return Vector2.down; 
+            case 2: return Vector2.left; 
+            case 3: return Vector2.right; 
         }
-    }
+        return Vector2.zero;
+    }   
 }
