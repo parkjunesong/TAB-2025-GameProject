@@ -1,33 +1,18 @@
 using UnityEngine;
+using System.Collections;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MovingObject
 {
-    public float speed = 3f;
-    private Animator animator;
-    private Rigidbody2D rb;
-    private Vector2 movement;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
-
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        if (isMoving) return; // 이동 중엔 입력 무시
 
-        animator.SetFloat("MoveX", movement.x);
-        animator.SetFloat("MoveY", movement.y);
-        animator.SetBool("IsMoving", movement.sqrMagnitude > 0);
-    }
+        Vector2 input = Vector2.zero;
+        if (Input.GetKey(KeyCode.W)) input = Vector2.up;
+        else if (Input.GetKey(KeyCode.S)) input = Vector2.down;
+        else if (Input.GetKey(KeyCode.A)) input = Vector2.left;
+        else if (Input.GetKey(KeyCode.D)) input = Vector2.right;
 
-    void FixedUpdate()
-    {
-        if (movement.sqrMagnitude > 0)
-        {
-            rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
-        }
-    }
+        if (input != Vector2.zero) StartCoroutine(MoveStep(input));
+    }   
 }
