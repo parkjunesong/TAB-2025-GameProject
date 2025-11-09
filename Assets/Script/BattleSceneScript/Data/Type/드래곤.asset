@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f359c7f2c3f325f44983b0a4a2325c52, type: 3}
-  m_Name: "\uB4DC\uB808\uACE4"
+  m_Name: "\uB4DC\uB798\uACE4"
   m_EditorClassIdentifier: 
   Name: "\uB4DC\uB808\uACE4"
   Color: {r: 0.43529412, g: 0.20784314, b: 0.9882353, a: 1}
