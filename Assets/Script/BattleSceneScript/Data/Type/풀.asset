@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f359c7f2c3f325f44983b0a4a2325c52, type: 3}
   m_Name: "\uD480"
   m_EditorClassIdentifier: 
-  Name: "\uB178\uB9D0"
-  Color: {r: 0.9514825, g: 0.79384303, b: 0.7270762, a: 1}
-  Type: 1
-  Very_Effective_Type: 
-  Not_Very_Effective_Type: 0d000000
-  Not_Effective_Type: 0e000000
+  Name: "\uD480"
+  Color: {r: 0.47843137, g: 0.78039217, b: 0.29803923, a: 1}
+  Type: 4
+  Very_Effective_Type: 03000000090000000d000000
+  Not_Very_Effective_Type: 0200000004000000080000000a0000000c0000000f00000011000000
+  Not_Effective_Type: 
