@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Snivy
-  - Menu
   - MovingObject
+  - Object
   layers:
   - Default
   - TransparentFX
