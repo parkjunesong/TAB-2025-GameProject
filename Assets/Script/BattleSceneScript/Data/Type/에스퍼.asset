@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f359c7f2c3f325f44983b0a4a2325c52, type: 3}
   m_Name: "\uC5D0\uC2A4\uD37C"
   m_EditorClassIdentifier: 
-  Name: "\uB178\uB9D0"
-  Color: {r: 0.9514825, g: 0.79384303, b: 0.7270762, a: 1}
-  Type: 1
-  Very_Effective_Type: 
-  Not_Very_Effective_Type: 0d000000
-  Not_Effective_Type: 0e000000
+  Name: "\uC5D0\uC2A4\uD37C"
+  Color: {r: 0.9764706, g: 0.33333334, b: 0.5294118, a: 1}
+  Type: 11
+  Very_Effective_Type: 0700000008000000
+  Not_Very_Effective_Type: 0b00000011000000
+  Not_Effective_Type: 10000000

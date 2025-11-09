@@ -16,5 +16,5 @@ MonoBehaviour:
   Color: {r: 0.9514825, g: 0.79384303, b: 0.7270762, a: 1}
   Type: 1
   Very_Effective_Type: 
-  Not_Very_Effective_Type: 0d000000
+  Not_Very_Effective_Type: 0d00000011000000
   Not_Effective_Type: 0e000000
