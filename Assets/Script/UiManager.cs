@@ -19,7 +19,7 @@ public class UiManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.mousePosition.y <= Screen.height * 0.2f)
+        if (Input.mousePosition.y <= Screen.height * 0.1f)
         {
             hoverTimer += Time.deltaTime;
 
@@ -29,7 +29,7 @@ public class UiManager : MonoBehaviour
                 ChangeUiScreenActiveState(true);
             }
         }
-        else if (Input.mousePosition.y >= Screen.height * 0.8f)
+        else if (Input.mousePosition.y >= Screen.height * 0.9f)
         {
             hoverTimer += Time.deltaTime;
 

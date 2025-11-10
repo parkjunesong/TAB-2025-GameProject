@@ -13,7 +13,7 @@ public class MovingObject : MonoBehaviour
     //public Animator animator; 
 
 
-    void Awake()
+    void Awake() // 씬 전환 후 세팅값 사라지는 문제
     {
         gameObject.tag = "MovingObject";
         gameObject.AddComponent<BoxCollider2D>();

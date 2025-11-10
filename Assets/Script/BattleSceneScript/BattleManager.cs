@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class BattleManager : MonoBehaviour
 {
@@ -25,6 +23,7 @@ public class BattleManager : MonoBehaviour
         BattleStart();
         GetComponent<SkillManager>().UpdateUi();
         GetComponent<PokemonEntryManager>().UpdateUi();
+        GetComponent<BattleUiManager>().UpdateUi();
     }
 
     public void BattleStart()
@@ -63,11 +62,13 @@ public class BattleManager : MonoBehaviour
 
             yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
             GetComponent<PokemonEntryManager>().UpdateUi();
+            GetComponent<BattleUiManager>().UpdateUi();
         }
         else
         {
             yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
             GetComponent<PokemonEntryManager>().UpdateUi();
+            GetComponent<BattleUiManager>().UpdateUi();
 
             yield return new WaitUntil(() => isPlayerActioned);
         }
