@@ -5,4 +5,6 @@ public class ItemData : ScriptableObject
 {
     public string Name;
     public Sprite Icon;
+    public ItemCategory Category;
+    public string Text;
 }

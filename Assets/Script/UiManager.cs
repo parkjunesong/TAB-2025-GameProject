@@ -9,6 +9,7 @@ public class UiManager : MonoBehaviour
     public GameObject MainButtons;
     public GameObject FightButtons;
     public GameObject PokemonButtons;
+    public GameObject BagButtons;
     private float hoverTimer;
 
     void Awake()
@@ -50,6 +51,7 @@ public class UiManager : MonoBehaviour
         MainButtons.SetActive(true);
         FightButtons.SetActive(false);
         PokemonButtons.SetActive(false);
+        BagButtons.SetActive(false);
     }
     public void FightButton()
     {
@@ -58,7 +60,9 @@ public class UiManager : MonoBehaviour
     }
     public void BagButton()
     {
-        Debug.Log("b");
+        MainButtons.SetActive(false);
+        BagButtons.SetActive(true);
+        GetComponent<BagManager>().ViewItems();
     }
     public void RunButton()
     {

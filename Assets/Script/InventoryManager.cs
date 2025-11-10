@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class InventorySlot
@@ -13,12 +14,16 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager Instance;
 
     public List<InventorySlot> Inventory = new();
-    public int maxSlots = 20;
+    public List<ItemData> TestItems;
+    public int maxSlots = 100;
 
     void Awake()
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
+
+        foreach (ItemData item in TestItems)
+            AddItem(item);
 
         DontDestroyOnLoad(this);
     }
@@ -27,20 +32,22 @@ public class InventoryManager : MonoBehaviour
     {
         return delegate (InventorySlot slot) { return slot.item == targetItem; };
     }
+    public List<InventorySlot> FindItemsByCategory(ItemCategory category)
+    {
+        var list = Inventory.FindAll(slot => slot.item.Category == category);
+        return list;
+    }
 
     public void AddItem(ItemData newItem)
     {
-        var slot = Inventory.Find(FindItem(newItem)); //아이템이 존재하는 슬롯
+        var slot = Inventory.Find(FindItem(newItem));
 
-        if (slot != null) //이미 아이템이 존재하면
-        {
-            slot.quantity += 1; 
-        }
-        else if (Inventory.Count < maxSlots) //새 아이템이면
-        {
-            Inventory.Add(new InventorySlot { item = newItem, quantity = 1 });
-        }
-        else return; // 인벤토리 가득 참
+        // 이미 해당 아이템이 존재할 경우
+        if (slot != null) slot.quantity += 1;
+        // 아이템이 새로 추가된 경우
+        else if (Inventory.Count < maxSlots) Inventory.Add(new InventorySlot { item = newItem, quantity = 1 });
+        // 인벤토리 가득 참
+        else return; 
     }
 
     public void RemoveItem(ItemData item)
