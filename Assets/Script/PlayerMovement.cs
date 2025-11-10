@@ -3,8 +3,10 @@ using System.Collections;
 
 public class PlayerMovement : MovingObject
 {
+    public bool canMove = true;
     void Update()
     {
+        if (!canMove) return;
         if (isMoving) return; // 이동 중엔 입력 무시
 
         Vector2 input = Vector2.zero;
