@@ -13,7 +13,7 @@ public class PlayerUnit : Unit
         GetComponent<SpriteRenderer>().sprite = data.BackSprite;
 
         transform.position = new Vector2(-3.5f, -2);
-        transform.localScale = new Vector3(8, 10, 1);
+        transform.localScale = new Vector3(6, 6, 1);
         gameObject.SetActive(false);
         name = Team + " " + Data.Name;
     }

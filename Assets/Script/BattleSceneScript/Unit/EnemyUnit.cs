@@ -13,7 +13,7 @@ public class EnemyUnit : Unit
         GetComponent<SpriteRenderer>().sprite = data.FrontSprite;
 
         transform.position = new Vector2(5, 2);
-        transform.localScale = new Vector3(5, 7, 1);
+        transform.localScale = new Vector3(5, 5, 1);
         gameObject.SetActive(false);
         name = Team + " " + Data.Name;
 
