@@ -6,6 +6,8 @@ TagManager:
   tags:
   - MovingObject
   - Object
+  - NPC
+  - PlayerMe
   layers:
   - Default
   - TransparentFX

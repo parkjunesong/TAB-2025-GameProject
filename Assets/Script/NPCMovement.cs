@@ -8,6 +8,12 @@ public class NPCMovement : MovingObject
     public NPCMoveFrequency frequency;
     private Coroutine moveStepCoroutine;
 
+    protected override void Awake()
+    {
+        base.Awake();
+        gameObject.tag = "NPC";
+    }
+
     void Start()
     {    
         StartCoroutine(MoveRoutine());

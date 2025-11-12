@@ -44,10 +44,13 @@ public class NPCBattleTrigger : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log($"Ray 충돌 감지: {hit.collider.name}");
+            if (hit.collider.name == "PlayerMe")
+            {
+                Debug.Log($"Ray 충돌 감지: {hit.collider.name}");
+            }
 
             // Player 감지 시 전투
-            if (hit.collider.CompareTag("MovingObject"))
+            if (hit.collider.CompareTag("PlayerMe"))
             {
                 hasTriggered = true;
                 hit.collider.GetComponent<PlayerMovement>().canMove = false; // 해당 부분을 통하여 배틀에 걸렸을때 플레이어가 움직이지 못하도록 함

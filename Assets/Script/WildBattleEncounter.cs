@@ -14,7 +14,7 @@ public class WildBattleEncounter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("MovingObject"))
+        if (collision.CompareTag("PlayerMe"))
         {
             Debug.Log("플레이어가 pocketgrass에 들어옴");
             isInGrass = true;
@@ -23,7 +23,7 @@ public class WildBattleEncounter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("MovingObject"))
+        if (collision.CompareTag("PlayerMe"))
         {
             Debug.Log("플레이어가 pocketgrass에서 나감");
             isInGrass = false;

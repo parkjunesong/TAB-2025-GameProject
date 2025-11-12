@@ -10,12 +10,11 @@ public class MovingObject : MonoBehaviour
     protected float moveSpeed = 4f;     // 이동 속도
     protected bool isMoving = false;   // 이동 중 여부
     protected Rigidbody2D rb;
-    //public Animator animator; 
+    //public Animator animator;
 
 
-    void Awake() // 씬 전환 후 세팅값 사라지는 문제
+    protected virtual void Awake() // 씬 전환 후 세팅값 사라지는 문제
     {
-        gameObject.tag = "MovingObject";
         gameObject.AddComponent<BoxCollider2D>();
         rb = gameObject.AddComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;

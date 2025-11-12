@@ -16,10 +16,12 @@ public class UiManager : MonoBehaviour
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
     {
+        if (UiScreen == null) return;
         if (Input.mousePosition.y <= Screen.height * 0.1f)
         {
             hoverTimer += Time.deltaTime;
