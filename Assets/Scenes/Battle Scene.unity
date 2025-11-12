@@ -2966,7 +2966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &495619755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9972,6 +9972,7 @@ GameObject:
   - component: {fileID: 1654234334}
   - component: {fileID: 1654234335}
   - component: {fileID: 1654234336}
+  - component: {fileID: 1654234337}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10078,6 +10079,19 @@ MonoBehaviour:
   PlayerHpbar: {fileID: 811187979}
   EnemyHpbar: {fileID: 777950367}
   Uiscreen: {fileID: 1609422414}
+--- !u!114 &1654234337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654234330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b92baf360722c405faf1ec04708c83a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextPanel: {fileID: 495619754}
 --- !u!1 &1668858324
 GameObject:
   m_ObjectHideFlags: 0
