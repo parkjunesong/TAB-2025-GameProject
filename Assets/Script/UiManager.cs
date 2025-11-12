@@ -38,6 +38,7 @@ public class UiManager : MonoBehaviour
             {
                 MainButton();
                 ChangeUiScreenActiveState(false);
+                DialogueManager.Instance.TextPanel.SetActive(true);
             }
         }
         else hoverTimer = 0f;
@@ -52,6 +53,8 @@ public class UiManager : MonoBehaviour
         FightButtons.SetActive(false);
         PokemonButtons.SetActive(false);
         BagButtons.SetActive(false);
+        DialogueManager.Instance.EndDialogue();
+
     }
     public void FightButton()
     {

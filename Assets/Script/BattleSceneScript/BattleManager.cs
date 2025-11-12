@@ -58,25 +58,38 @@ public class BattleManager : MonoBehaviour
         isPlayerActioned = false;
         if (PlayerUnits[0].Status.SP >= EnemyUnits[0].Status.SP)
         {
+            DialogueManager.Instance.StartDialogue(new List<string> { "플레이어는 무엇을 할까" }, DialogueEndCase.always);
             yield return new WaitUntil(() => isPlayerActioned);
+            GetComponent<PokemonEntryManager>().UpdateUi();
+            GetComponent<BattleUiManager>().UpdateUi();
+            yield return new WaitForSeconds(5f);
+
 
             yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
+            yield return new WaitForSeconds(5f);
+
         }
         else
         {
             yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
+            yield return new WaitForSeconds(5f);
 
+            DialogueManager.Instance.StartDialogue(new List<string> { "플레이어는 무엇을 할까" }, DialogueEndCase.always);
             yield return new WaitUntil(() => isPlayerActioned);
+            GetComponent<PokemonEntryManager>().UpdateUi();
+            GetComponent<BattleUiManager>().UpdateUi();
+            yield return new WaitForSeconds(5f);
+
         }
-        yield return new WaitForSeconds(3f);
         TurnEnd();
     }
     public void TurnEnd()
     {
+        DialogueManager.Instance.EndDialogue();
         PlayerUnits[0].TurnEnd();
         EnemyUnits[0].TurnEnd();
         TurnStart();

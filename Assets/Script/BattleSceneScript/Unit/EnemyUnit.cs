@@ -22,10 +22,8 @@ public class EnemyUnit : Unit
     public override void TurnEnd() { }
     public IEnumerator Action()
     {
-        Debug.Log("enemy action");
-
         Skill.UseSkillNo(Random.Range(0, 4));
-        yield return new WaitForSeconds(1f);
+        yield return null;
     }
     public override void OnDied()
     {

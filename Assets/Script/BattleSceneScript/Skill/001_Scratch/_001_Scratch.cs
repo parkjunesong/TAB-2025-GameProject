@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "Scratch", menuName = "Scriptable Object/Skill/001_Scratch")]
 
@@ -12,6 +14,7 @@ public class _001_Scratch : Skill_Base
     public override void Execute(Unit caster)
     {
         EffectList[0].Execute(caster);
+        DialogueManager.Instance.StartDialogue(new List<string> { "ÁlÄû±â!"}, DialogueEndCase.always);
     }
 }
     
