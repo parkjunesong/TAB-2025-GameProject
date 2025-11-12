@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a884bc4acc7f454fb6df668e165e206
+guid: 40840c09d7431d54083bfe608e1dc1c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8424703364661910032
-    second: cafe_sink01_0
+      213: -1377059067346257650
+    second: mart_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cafe_sink01_0
+      name: mart_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 175
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01a16bcf21f8ae470800000000000000
-      internalID: 8424703364661910032
+      spriteID: e0978100314b3ece0800000000000000
+      internalID: -1377059067346257650
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cafe_sink01_0: 8424703364661910032
+      mart_0: -1377059067346257650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
