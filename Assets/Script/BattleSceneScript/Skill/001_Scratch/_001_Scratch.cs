@@ -14,7 +14,7 @@ public class _001_Scratch : Skill_Base
     public override void Execute(Unit caster)
     {
         EffectList[0].Execute(caster);
-        DialogueManager.Instance.StartDialogue(new List<string> { "ÁlÄû±â!"}, DialogueEndCase.always);
+        DialogueManager.Instance.StartDialogue(new List<string> { Skill_Name +" °ø°Ý!"}, DialogueEndCase.always);
     }
 }
     
