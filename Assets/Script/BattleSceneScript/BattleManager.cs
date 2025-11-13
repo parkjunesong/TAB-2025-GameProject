@@ -58,7 +58,7 @@ public class BattleManager : MonoBehaviour
         isPlayerActioned = false;
         if (PlayerUnits[0].Status.SP >= EnemyUnits[0].Status.SP)
         {
-            DialogueManager.Instance.StartDialogue(new List<string> { "플레이어는 무엇을 할까" }, DialogueEndCase.always);
+            DialogueManager.Instance.StartDialogue(new List<string> { "플레이어는 무엇을 할까" });
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
@@ -78,7 +78,7 @@ public class BattleManager : MonoBehaviour
             GetComponent<BattleUiManager>().UpdateUi();
             yield return new WaitForSeconds(5f);
 
-            DialogueManager.Instance.StartDialogue(new List<string> { "플레이어는 무엇을 할까" }, DialogueEndCase.always);
+            DialogueManager.Instance.StartDialogue(new List<string> { "플레이어는 무엇을 할까" });
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();

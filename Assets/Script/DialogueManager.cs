@@ -1,11 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
-
-public enum DialogueEndCase { mouse, timer, always }
 
 public class DialogueManager : MonoBehaviour
 {
@@ -24,48 +20,34 @@ public class DialogueManager : MonoBehaviour
         TextField = TextPanel.GetComponentInChildren<Text>();
     }
 
-    public void StartDialogue(List<string> Dialogue, DialogueEndCase EndCase)
+    public void StartDialogue(List<string> Dialogue, bool always = true)
     {
         index = 0;
         TextPanel.SetActive(true);    
-        StartCoroutine(StartTalk(Dialogue, EndCase));
+        StartCoroutine(StartTalk(Dialogue, always));
     }
     public void EndDialogue()
     {
         TextPanel.SetActive(false);
     }
 
-    IEnumerator StartTalk(List<string> Dialogue, DialogueEndCase EndCase)
+    IEnumerator StartTalk(List<string> Dialogue, bool always)
     {
         timer = 0;
         TextField.text = "";
         yield return StartCoroutine(Typing(Dialogue[index]));
-        switch (EndCase)
+
+        if (always) yield break; 
+        else yield return new WaitUntil(() =>
         {
-            case DialogueEndCase.mouse:
-                {
-                    yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Mouse0));
-                    break;
-                }
-            case DialogueEndCase.timer:
-                {
-                    yield return new WaitUntil(() =>
-                    {
-                        timer += Time.deltaTime;
-                        return Input.GetKeyDown(KeyCode.Mouse0) || timer >= 10f;
-                    });
-                    break;
-                }
-            case DialogueEndCase.always:
-                {
-                    yield break;
-                }
-        }
+            timer += Time.deltaTime;
+            return Input.GetKeyDown(KeyCode.Mouse0) || timer >= 5f;
+        });
 
         if (index < Dialogue.Count - 1)
         {
             index++;
-            StartCoroutine(StartTalk(Dialogue, EndCase));
+            StartCoroutine(StartTalk(Dialogue, always));
         }
         else EndDialogue();
     }
