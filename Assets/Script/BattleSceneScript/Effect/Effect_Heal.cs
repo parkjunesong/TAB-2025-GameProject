@@ -9,6 +9,6 @@ public class Effect_Heal : Effect_Base
     public override void Execute(Unit caster)
     {
         Unit target = SetTarget(caster);
-        target.OnHealed(caster.Status.AT * Value * (2 * caster.Status.Level / 5f + 2));
+        target.OnHealed(Value);
     }
 }

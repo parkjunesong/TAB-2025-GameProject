@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Sitrus Berry
   m_EditorClassIdentifier: 
   Name: "\uC790\uBB49\uC5F4\uB9E4"
-  Icon: {fileID: -6044137320262594990, guid: 7285019c4f441b947aea253ef9e4e281, type: 3}
+  Icon: {fileID: 2481708487335822006, guid: 5fac4fa900f61ae4dad777f3e575e521, type: 3}
   Category: 1
-  Text: "\uC2A4\uD504\uB808\uC774\uC2DD\uC758 \uC0C1\uCC98\uC57D. \uD3EC\uCF13\uBAAC
-    1\uB9C8\uB9AC\uC758 HP\uB97C 20\uB9CC\uD07C \uD68C\uBCF5\uD55C\uB2E4."
+  Text: "\uC6D0\uB798\uB294 \uC624\uB7AD\uC5F4\uB9E4\uC640 \uB611\uAC19\uC740 \uC885\uB958\uB85C\uBD80\uD130
+    \uAC08\uB77C\uC838 \uB098\uC654\uB2E4. \uC624\uB7AD\uBCF4\uB2E4 \uD06C\uACE0
+    \uB465\uAE00\uB2E4. HP\uC758 25%\uB9CC\uD07C \uD68C\uBCF5\uD55C\uB2E4."
