@@ -24,4 +24,9 @@ public class Unit_Status
     {
         HP -= (int)((damage / DF) / 50f + 2);
     }
+    public void OnHealed(float value)
+    {
+        HP += (int)(value);
+        if (HP >= maxHP) HP = maxHP;
+    }
 }

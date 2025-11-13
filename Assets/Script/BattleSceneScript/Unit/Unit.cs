@@ -16,12 +16,16 @@ public abstract class Unit : MonoBehaviour
     public abstract void OnDied();
 
 
-    public void OnDamaged(float damage)
+    public void OnDamaged(float value)
     {
-        Status.OnDamaged(damage);
+        Status.OnDamaged(value);
 
         if (Status.HP <= 0) OnDied();
     }
-    
+    public void OnHealed(float value)
+    {
+        Status.OnHealed(value);
+    }
+
 
 }
