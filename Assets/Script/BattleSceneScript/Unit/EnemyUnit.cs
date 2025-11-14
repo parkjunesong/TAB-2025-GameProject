@@ -12,8 +12,8 @@ public class EnemyUnit : Unit
         Skill  = new Unit_Skill(Data, this);
         GetComponent<SpriteRenderer>().sprite = data.FrontSprite;
 
-        transform.position = new Vector2(5, 2);
-        transform.localScale = new Vector3(5, 5, 1);
+        transform.position = new Vector2(5.2f, -4.7f);
+        transform.localScale = new Vector3(6, 7, 1);
         gameObject.SetActive(false);
         name = Team + " " + Data.Name;
 

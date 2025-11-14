@@ -8,13 +8,9 @@ public class WildBattleEncounter : MonoBehaviour
     private IEnumerator Encounter()
     {
         yield return new WaitForSeconds(1f);
-        yield return new WaitUntil(() =>
-        {
-            return Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0;
-        });
+        yield return new WaitUntil(() => Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0);
 
         if (Random.value < 0.1f) SceneManager.LoadScene("Battle Scene");
-
         StartCoroutine(Encounter());
     }
    

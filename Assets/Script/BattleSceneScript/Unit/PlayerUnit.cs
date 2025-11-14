@@ -12,8 +12,8 @@ public class PlayerUnit : Unit
         Skill = new Unit_Skill(Data, this);
         GetComponent<SpriteRenderer>().sprite = data.BackSprite;
 
-        transform.position = new Vector2(-3.5f, -2);
-        transform.localScale = new Vector3(6, 6, 1);
+        transform.position = new Vector2(-4, -9.5f);
+        transform.localScale = new Vector3(7, 8, 1);
         gameObject.SetActive(false);
         name = Team + " " + Data.Name;
     }
