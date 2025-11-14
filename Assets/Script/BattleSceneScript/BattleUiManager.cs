@@ -20,8 +20,10 @@ public class BattleUiManager : MonoBehaviour
         Instance = this;
     }
 
-    void Update() // 조작 가능 시간일때만 입력받도록
+    void Update()
     {
+        if (BattleManager.Instance.isPlayerActioned) return;
+
         if (Input.mousePosition.y <= Screen.height * 0.1f)
         {
             hoverTimer += Time.deltaTime;
