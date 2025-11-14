@@ -863,8 +863,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654234334}
-        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+      - m_Target: {fileID: 1654234336}
+        m_TargetAssemblyTypeName: BattleUiManager, Assembly-CSharp
         m_MethodName: PokemonButton
         m_Mode: 1
         m_Arguments:
@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654234334}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: MainButton
         m_Mode: 1
@@ -4117,8 +4117,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654234334}
-        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+      - m_Target: {fileID: 1654234336}
+        m_TargetAssemblyTypeName: BattleUiManager, Assembly-CSharp
         m_MethodName: FightButton
         m_Mode: 1
         m_Arguments:
@@ -6983,8 +6983,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654234334}
-        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+      - m_Target: {fileID: 1654234336}
+        m_TargetAssemblyTypeName: BattleUiManager, Assembly-CSharp
         m_MethodName: BagButton
         m_Mode: 1
         m_Arguments:
@@ -9968,10 +9968,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1654234331}
   - component: {fileID: 1654234332}
-  - component: {fileID: 1654234333}
-  - component: {fileID: 1654234334}
-  - component: {fileID: 1654234335}
   - component: {fileID: 1654234336}
+  - component: {fileID: 1654234333}
+  - component: {fileID: 1654234335}
   - component: {fileID: 1654234337}
   m_Layer: 0
   m_Name: GameManager
@@ -10028,23 +10027,6 @@ MonoBehaviour:
   - {fileID: 2014413254}
   - {fileID: 895065681}
   - {fileID: 2116381103}
---- !u!114 &1654234334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654234330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7b74a1185258142a56df0f4ad8afe8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UiScreen: {fileID: 1609422414}
-  MainButtons: {fileID: 735444175}
-  FightButtons: {fileID: 479262191}
-  PokemonButtons: {fileID: 2095662575}
-  BagButtons: {fileID: 1438706715}
 --- !u!114 &1654234335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10078,7 +10060,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHpbar: {fileID: 811187979}
   EnemyHpbar: {fileID: 777950367}
-  Uiscreen: {fileID: 1609422414}
+  UiScreen: {fileID: 1609422414}
+  MainButtons: {fileID: 735444175}
+  FightButtons: {fileID: 479262191}
+  PokemonButtons: {fileID: 2095662575}
+  BagButtons: {fileID: 1438706715}
 --- !u!114 &1654234337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10458,8 +10444,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654234334}
-        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+      - m_Target: {fileID: 1654234336}
+        m_TargetAssemblyTypeName: BattleUiManager, Assembly-CSharp
         m_MethodName: RunButton
         m_Mode: 1
         m_Arguments:
@@ -10816,71 +10802,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800501644}
   m_CullTransparentMesh: 1
---- !u!1 &1811104327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1811104329}
-  - component: {fileID: 1811104328}
-  - component: {fileID: 1811104330}
-  m_Layer: 0
-  m_Name: Pokemon & Inventory Data
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1811104328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811104327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26420bc74eb9bcb4887222e88ff0ea83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PartyManager
-  PlayerUnitData:
-  - {fileID: 11400000, guid: e6b4e6d9a1831024e80983ec9214778f, type: 2}
-  - {fileID: 11400000, guid: 25386545fe7b0ff4d98c2a7c66af6aad, type: 2}
-  - {fileID: 11400000, guid: 89776fe6acd18ce47a0e874d6b9f0d11, type: 2}
-  EnemyUnitData:
-  - {fileID: 11400000, guid: e6b4e6d9a1831024e80983ec9214778f, type: 2}
---- !u!4 &1811104329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811104327}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1811104330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811104327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1bebef2c0c4914438a1c0186b7b22c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TestItems: []
-  maxSlots: 20
 --- !u!1 &1812209787
 GameObject:
   m_ObjectHideFlags: 0
@@ -11472,7 +11393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1654234334}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: MainButton
         m_Mode: 1
@@ -13555,10 +13476,9 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1654234331}
   - {fileID: 980329701}
   - {fileID: 242775081}
-  - {fileID: 1654234331}
-  - {fileID: 1811104329}
   - {fileID: 1847591325}
   - {fileID: 1108539353}
   - {fileID: 370725297}

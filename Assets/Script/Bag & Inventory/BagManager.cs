@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public enum ItemCategory { Pokeballs, Recovery }
 
@@ -29,12 +28,11 @@ public class BagManager : MonoBehaviour
         Index = 0;
         Bag[0] = new BagData(ItemCategory.Pokeballs, "몬스터볼");
         Bag[1] = new BagData(ItemCategory.Recovery, "회복");
-        DontDestroyOnLoad(this);
     }
 
     public void ViewItems()
     {
-        var content = UiManager.Instance.BagButtons.transform.GetChild(0);
+        var content = GameObject.Find("BagButtons").transform.GetChild(0);
         var invenSlot = content.GetChild(2).GetChild(1).GetChild(0);
         var invenList = InventoryManager.Instance.FindItemsByCategory((ItemCategory)Index);
 

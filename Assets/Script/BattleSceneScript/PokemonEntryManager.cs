@@ -41,7 +41,7 @@ public class PokemonEntryManager : MonoBehaviour
         UpdateUi();
         GetComponent<SkillManager>().UpdateUi();
 
-        UiManager.Instance.ChangeUiScreenActiveState(false);
+        BattleUiManager.Instance.ChangeUiScreenActiveState(false);
         BattleManager.Instance.isPlayerActioned = true;
     }
 }

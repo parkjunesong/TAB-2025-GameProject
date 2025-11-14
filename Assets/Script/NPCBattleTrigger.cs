@@ -44,11 +44,6 @@ public class NPCBattleTrigger : MonoBehaviour
 
         if (hit.collider != null)
         {
-            if (hit.collider.name == "PlayerMe")
-            {
-                Debug.Log($"Ray 충돌 감지: {hit.collider.name}");
-            }
-
             // Player 감지 시 전투
             if (hit.collider.CompareTag("PlayerMe"))
             {
@@ -71,9 +66,8 @@ public class NPCBattleTrigger : MonoBehaviour
         };
     }
 
-    private IEnumerator StartBattle()
+    private IEnumerator StartBattle() // 화면 암전효과 추가 예정
     {
-        Debug.Log("플레이어 감지 배틀 시작!");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(battleSceneName);
     }

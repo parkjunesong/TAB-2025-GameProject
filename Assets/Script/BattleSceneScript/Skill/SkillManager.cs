@@ -26,7 +26,7 @@ public class SkillManager : MonoBehaviour
     public void UseSkillNo(int i)
     {
         BattleManager.Instance.PlayerUnits[0].Skill.UseSkillNo(i);
-        UiManager.Instance.ChangeUiScreenActiveState(false);
+        BattleUiManager.Instance.ChangeUiScreenActiveState(false);
 
         BattleManager.Instance.isPlayerActioned = true;
     }  
