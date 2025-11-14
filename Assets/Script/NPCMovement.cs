@@ -4,12 +4,18 @@ using System.Collections;
 public enum NPCMoveFrequency { stop, sometimes, normal, often }
 
 public class NPCMovement : MovingObject
-{   
+{
     public NPCMoveFrequency frequency;
     private Coroutine moveStepCoroutine;
 
+    protected override void Awake()
+    {
+        base.Awake();
+        gameObject.tag = "NPC";
+    }
+
     void Start()
-    {    
+    {
         StartCoroutine(MoveRoutine());
     }
     IEnumerator MoveRoutine()
@@ -32,18 +38,18 @@ public class NPCMovement : MovingObject
                 break;
         }
         StartCoroutine(MoveRoutine());
-    }   
+    }
 
     Vector2 ChooseDirection()
     {
         int dir = Random.Range(0, 4);
         switch (dir)
         {
-            case 0: return Vector2.up; 
-            case 1: return Vector2.down; 
-            case 2: return Vector2.left; 
-            case 3: return Vector2.right; 
+            case 0: return Vector2.up;
+            case 1: return Vector2.down;
+            case 2: return Vector2.left;
+            case 3: return Vector2.right;
         }
         return Vector2.zero;
-    }   
+    }
 }

@@ -6066,7 +6066,7 @@ GameObject:
   - component: {fileID: 468528504}
   m_Layer: 0
   m_Name: testStandingNPC
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9193,7 +9193,7 @@ GameObject:
   - component: {fileID: 766156638}
   m_Layer: 0
   m_Name: testNPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14954,7 +14954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053198499}
   m_Layer: 5
-  m_Name: Null
+  m_Name: FightButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40143,7 +40143,7 @@ GameObject:
   - component: {fileID: 1871878205}
   m_Layer: 0
   m_Name: testPlayer
-  m_TagString: Untagged
+  m_TagString: PlayerMe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
