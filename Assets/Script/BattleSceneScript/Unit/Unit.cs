@@ -10,6 +10,8 @@ public abstract class Unit : MonoBehaviour
     public Unit_Status Status;
     public Unit_Skill Skill;
 
+    public ItemData EquippedItem;
+
     public abstract void Init(UnitData Data);
     public abstract void TurnStart();
     public abstract void TurnEnd();
