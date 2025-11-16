@@ -13,18 +13,25 @@ public class Effect_Damage : Effect_Base
     public override void Execute(Unit caster)
     {
         Unit target = SetTarget(caster);
+        float damage = getDamage(caster, target);
         target.OnDamaged(getDamage(caster, target));
     }
     private float getDamage(Unit caster, Unit target)
     {     
         float damage = caster.Status.AT * Value * (2 * caster.Status.Level / 5f + 2);
 
-        if (Skill_Type.Type == caster.Status.Type) damage *= 1.5f; // ÀÚ¼Óº¸Á¤
-        if (Random.Range(0, 100) < 10) damage *= 2; // ±Þ¼Ò
-        // Æ¯¼º
-        // µµ±¸
+        if (Skill_Type.Type == caster.Status.Type) damage *= 1.5f; // ï¿½Ú¼Óºï¿½ï¿½ï¿½
+        if (Random.Range(0, 100) < 10) damage *= 2; // ï¿½Þ¼ï¿½
+        // Æ¯ï¿½ï¿½
+        // ï¿½ï¿½ï¿½ï¿½
 
-        // Å¸ÀÔ »ó¼º
+         if (caster.EquippedItem != null &&
+        caster.EquippedItem.IsDamageBoostItem)
+    {
+        damage *= caster.EquippedItem.DamageMultiplier;   // ìƒëª…ì˜ êµ¬ìŠ¬ = 1.3f
+    }
+
+        // Å¸ï¿½ï¿½ ï¿½ï¿½
         foreach (Type type in Skill_Type.Very_Effective_Type)
             if (type == target.Status.Type) damage *= 2;
         foreach (Type type in Skill_Type.Not_Very_Effective_Type)
