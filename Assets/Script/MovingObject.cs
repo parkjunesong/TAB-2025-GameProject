@@ -6,52 +6,82 @@ public class MovingObject : MonoBehaviour
 {
     protected static List<MovingObject> allMovingObjects = new();
 
-    protected float stepDistance = 1f;  // 이동 거리
+    protected float stepDistance = 1f;  // 이동 칸(1칸씩)
     protected float moveSpeed = 4f;     // 이동 속도
-    protected bool isMoving = false;   // 이동 중 여부
+    protected bool isMoving = false;
+
     protected Rigidbody2D rb;
-    //public Animator animator;
+    protected Animator animator;
 
-
-    protected virtual void Awake() // 씬 전환 후 세팅값 사라지는 문제
+    protected virtual void Awake()
     {
-        gameObject.AddComponent<BoxCollider2D>();
-        rb = gameObject.AddComponent<Rigidbody2D>();
+        // 기본 컴포넌트 세팅
+        if (GetComponent<BoxCollider2D>() == null)
+            gameObject.AddComponent<BoxCollider2D>();
+
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null) rb = gameObject.AddComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.freezeRotation = true;
 
-        //animator.SetFloat("MoveX", 0);
-        //animator.SetFloat("MoveY", -1);
-        //animator.SetBool("IsMoving", false);
+        animator = GetComponent<Animator>();
 
-        if (!allMovingObjects.Contains(this)) allMovingObjects.Add(this);
+        // 기본값 지정(Idle_Down 상태로 시작)
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", 0);
+            animator.SetFloat("MoveY", -1);
+            animator.SetBool("IsMoving", false);
+        }
+
+        if (!allMovingObjects.Contains(this))
+            allMovingObjects.Add(this);
     }
 
     public IEnumerator MoveStep(Vector2 direction)
     {
         isMoving = true;
+
+        // 이동 애니메이션 적용
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", direction.x);
+            animator.SetFloat("MoveY", direction.y);
+            animator.SetBool("IsMoving", true);
+        }
+
         Vector2 startPos = rb.position;
         Vector2 targetPos = startPos + direction.normalized * stepDistance;
 
-        // MovingObject가 목표 칸에 있음: 잠시 멈춤
+        // 다른 MovingObject가 있을 경우 충돌 처리
         foreach (var obj in allMovingObjects)
         {
             if (obj == this) continue;
             if (Vector2.Distance(obj.rb.position, targetPos) < 0.1f)
             {
                 isMoving = false;
-                yield return new WaitForSeconds(1f);
+                if (animator != null) animator.SetBool("IsMoving", false);
                 yield break;
             }
         }
-        // Object가 목표 칸에 있음: 이동 취소
+
+        // Object 태그와 충돌하면 멈춤
         Collider2D hit = Physics2D.OverlapBox(targetPos, Vector2.one * 0.8f, 0f);
         if (hit != null && hit.CompareTag("Object"))
         {
             isMoving = false;
+            if (animator != null) animator.SetBool("IsMoving", false);
             yield break;
         }
 
+        if (hit != null && hit.CompareTag("NPC"))
+        {
+            isMoving = false;
+            if (animator != null) animator.SetBool("IsMoving", false);
+            yield break;
+        }
+
+        // 실제 이동 수행
         while ((targetPos - rb.position).sqrMagnitude > 0.001f)
         {
             Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);
@@ -59,7 +89,11 @@ public class MovingObject : MonoBehaviour
             yield return new WaitForFixedUpdate();
         }
 
-        rb.MovePosition(targetPos); // 위치 보정
+        rb.MovePosition(targetPos);
+
+        if (animator != null)
+            animator.SetBool("IsMoving", false);
+
         isMoving = false;
     }
 }
