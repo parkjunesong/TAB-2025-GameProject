@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6448126485736086145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113358577735010148}
+  - component: {fileID: -1410450788978423524}
+  m_Layer: 0
+  m_Name: LifeOrb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113358577735010148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448126485736086145}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1410450788978423524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448126485736086145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6b1915c11750042a64150191925dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\uC0DD\uBA85\uC758 \uAD6C\uC2AC"
+  Icon: {fileID: 8715625095853918406, guid: e077cb1fa97291743bbfebbeb35ebc72, type: 3}
+  Category: 2
+  Text: "\uC9C0\uB2C8\uAC8C \uD558\uBA74 \uACF5\uACA9\uD560 \uB54C\uB9C8\uB2E4 HP\uAC00
+    \uC870\uAE08\uC529 \uC904\uC9C0\uB9CC \uAE30\uC220\uC758 \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."

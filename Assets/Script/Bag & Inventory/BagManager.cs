@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ItemCategory { Pokeballs, Recovery }
+public enum ItemCategory { Pokeballs, Recovery, Tools }
 
 public class BagData
 {
@@ -21,13 +21,14 @@ public class BagManager : MonoBehaviour
 {
     public int Index;
     public GameObject itemSlotPrefab;
-    private BagData[] Bag = new BagData[2];
+    private BagData[] Bag = new BagData[3];
 
     void Awake()
     {
         Index = 0;
         Bag[0] = new BagData(ItemCategory.Pokeballs, "몬스터볼");
         Bag[1] = new BagData(ItemCategory.Recovery, "회복");
+        Bag[2] = new BagData(ItemCategory.Recovery, "도구");
     }
 
     public void ViewItems()

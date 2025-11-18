@@ -7,8 +7,6 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager Instance;
 
-    public GameObject UnitPrefab;
-
     public List<Unit> PlayerUnits = new();
     public List<Unit> EnemyUnits = new();
     public bool isPlayerActioned;
@@ -30,13 +28,13 @@ public class BattleManager : MonoBehaviour
         BattleUnitManager BUM = GameObject.Find("DataManager").GetComponent<BattleUnitManager>();
         foreach (UnitData data in BUM.PlayerUnitData)
         {
-            Unit unit = Instantiate(UnitPrefab).AddComponent<PlayerUnit>();
+            Unit unit = Instantiate(data.gameObject).AddComponent<PlayerUnit>();
             unit.Init(data);
             PlayerUnits.Add(unit);
         }
         foreach (UnitData data in BUM.EnemyUnitData)
         {
-            Unit unit = Instantiate(UnitPrefab).AddComponent<EnemyUnit>();
+            Unit unit = Instantiate(data.gameObject).AddComponent<EnemyUnit>();
             unit.Init(data);
             EnemyUnits.Add(unit);           
         }

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6448126485736086145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113358577735010148}
+  - component: {fileID: -7253599581082490328}
+  m_Layer: 0
+  m_Name: UltraBall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113358577735010148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448126485736086145}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7253599581082490328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448126485736086145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6415b01009858d74bba4c82a6257433c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\uD558\uC774\uD37C\uBCFC"
+  Icon: {fileID: -6044137320262594990, guid: 7285019c4f441b947aea253ef9e4e281, type: 3}
+  Category: 0
+  Text: "\uC288\uD37C\uBCFC\uBCF4\uB2E4\uB3C4 \uB354\uC6B1 \uD3EC\uCF13\uBAAC\uC744
+    \uC7A1\uAE30 \uC26C\uC6CC\uC9C4 \uB9E4\uC6B0 \uC131\uB2A5\uC774 \uC88B\uC740
+    \uBCFC."

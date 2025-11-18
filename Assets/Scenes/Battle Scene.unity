@@ -2246,10 +2246,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -10048,6 +10048,7 @@ GameObject:
   - component: {fileID: 1654234333}
   - component: {fileID: 1654234335}
   - component: {fileID: 1654234337}
+  - component: {fileID: 1654234338}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10082,7 +10083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dcfc2708418ea648a52b391e902b9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleManager
-  UnitPrefab: {fileID: 5070670562165492799, guid: e3436bd90081e4445bdaa88f537dd0bf, type: 3}
   PlayerUnits: []
   EnemyUnits: []
   isPlayerActioned: 0
@@ -10154,6 +10154,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextPanel: {fileID: 495619754}
+--- !u!114 &1654234338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654234330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e931261cef8f34a8ba2a1ec9b5d01c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1668858324
 GameObject:
   m_ObjectHideFlags: 0
