@@ -6,4 +6,8 @@ public class ScreenSetting : MonoBehaviour
     {
         Screen.SetResolution(1920, 1080, false);
     }
+    private void Start()
+    {
+        ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.FadeOutIn());
+    }
 }
