@@ -10083,6 +10083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dcfc2708418ea648a52b391e902b9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleManager
+  UnitPrefab: {fileID: 0}
   PlayerUnits: []
   EnemyUnits: []
   isPlayerActioned: 0
@@ -10098,11 +10099,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eecf5294a2b87e541b3fceab5d78ead6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillManager
-  skillUi:
-  - {fileID: 1846790908}
-  - {fileID: 2014413254}
-  - {fileID: 895065681}
-  - {fileID: 2116381103}
+  Skill_Type: {fileID: 0}
+  Skill_MaxPP: 0
+  Skill_Name: 
+  Skill_Icon: {fileID: 0}
+  Skill_Sound: {fileID: 0}
 --- !u!114 &1654234335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10153,7 +10154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92baf360722c405faf1ec04708c83a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextPanel: {fileID: 495619754}
+  target: {fileID: 0}
+  moveSpeed: 0
 --- !u!114 &1654234338
 MonoBehaviour:
   m_ObjectHideFlags: 0

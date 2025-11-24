@@ -10,4 +10,6 @@ public class UnitData : MonoBehaviour
     public Sprite FrontSprite, BackSprite;
     public List<Skill_Base> SkillList = new();
     public ItemData Item;
+
+    public GameObject HitEffectPrefab;
 }

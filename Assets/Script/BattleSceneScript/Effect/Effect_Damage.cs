@@ -14,7 +14,12 @@ public class Effect_Damage : Effect_Base
     {
         Unit target = SetTarget(caster);
         float damage = getDamage(caster, target);
-        target.OnDamaged(getDamage(caster, target));
+        target.OnDamaged(damage);  
+        ScreenFader fader = GameObject.FindObjectOfType<ScreenFader>();
+        if (fader != null)
+        {
+            fader.HitFlash();  
+        }
     }
     private float getDamage(Unit caster, Unit target)
     {     
