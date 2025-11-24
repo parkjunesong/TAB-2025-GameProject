@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 
 public class NPCBattleTrigger : MonoBehaviour
 {
+    public List<UnitData> enemyUnits = new();
     public enum FacingDirection { Up, Down, Left, Right }
     public FacingDirection facing = FacingDirection.Right;
 
@@ -101,6 +103,11 @@ public class NPCBattleTrigger : MonoBehaviour
     private IEnumerator StartBattle() // 화면 암전효과 추가 예정
     {
         yield return new WaitForSeconds(0.5f);
+
+        var BUM = GameObject.Find("DataManager").GetComponent<BattleUnitManager>();
+        BUM.EnemyUnitData.Clear();
+        foreach (var unit in enemyUnits)
+            BUM.EnemyUnitData.Add(unit);
         SceneManager.LoadScene(battleSceneName);
     }
 }

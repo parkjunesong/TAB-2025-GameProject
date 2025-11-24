@@ -9055,6 +9055,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102852ca9dee4d84db1f11be4b1f4424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyUnits:
+  - {fileID: 2543184108048944589, guid: 6c9956d0703ed2b479a4faf803b28b73, type: 3}
+  - {fileID: 2543184108048944589, guid: 9801170e21a9a77459c319fbfefc50b4, type: 3}
+  - {fileID: 2543184108048944589, guid: 075e7279755640249b67c069cebbf96e, type: 3}
   facing: 3
   visionDistance: 2.8
   visionMask:
@@ -32581,6 +32585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98536edf9beeb494f9d99ebc8ff5a012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyUnits:
+  - {fileID: 2543184108048944589, guid: 5913b3a67109f6e448ae531ef3e6088b, type: 3}
+  - {fileID: 2543184108048944589, guid: 75189583acd787c4388da3776c8f6d94, type: 3}
+  - {fileID: 2543184108048944589, guid: 850a6c33b2a6c084abf8cfa04478b2f8, type: 3}
   facing: 2
   visionDistance: 2.8
   visionMask:
@@ -37497,6 +37505,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edcad1779068b5b4585efbe66c846155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wildUnits:
+  - {fileID: 2543184108048944589, guid: 5913b3a67109f6e448ae531ef3e6088b, type: 3}
+  - {fileID: 2543184108048944589, guid: 6c9956d0703ed2b479a4faf803b28b73, type: 3}
+  - {fileID: 2543184108048944589, guid: 9801170e21a9a77459c319fbfefc50b4, type: 3}
+  - {fileID: 2543184108048944589, guid: 75189583acd787c4388da3776c8f6d94, type: 3}
+  - {fileID: 2543184108048944589, guid: 850a6c33b2a6c084abf8cfa04478b2f8, type: 3}
+  - {fileID: 2543184108048944589, guid: f854321cb0bc17744946d5df02555487, type: 3}
+  - {fileID: 2543184108048944589, guid: 075e7279755640249b67c069cebbf96e, type: 3}
 --- !u!19719996 &1594961116
 TilemapCollider2D:
   m_ObjectHideFlags: 0
