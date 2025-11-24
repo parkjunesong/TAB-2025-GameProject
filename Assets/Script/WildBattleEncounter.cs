@@ -10,7 +10,13 @@ public class WildBattleEncounter : MonoBehaviour
         yield return new WaitForSeconds(1f);
         yield return new WaitUntil(() => Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0);
 
-        if (Random.value < 0.1f) SceneManager.LoadScene("Battle Scene");
+        if (Random.value < 0.1f) 
+        {
+            GameObject.FindGameObjectWithTag("PlayerMe").GetComponent<PlayerMovement>().canMove = false;
+            ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene("Battle Scene");
+        }
         StartCoroutine(Encounter());
     }
    

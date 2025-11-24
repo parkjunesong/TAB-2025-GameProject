@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using System;
 
 public class ScreenFader : MonoBehaviour
 {
@@ -15,26 +14,41 @@ public class ScreenFader : MonoBehaviour
         Instance = this;
     }
 
-    public IEnumerator FadeOutIn()
+    public IEnumerator BattleEncount()
     {
-        yield return Fade(1f);
-        yield return new WaitForSeconds(0.3f);
-        yield return Fade(0f);
+        StartCoroutine(Flash(3));
+        yield return new WaitForSeconds(0.7f);
+        StartCoroutine(Fade(1f, 1f));
     }
 
-    private IEnumerator Fade(float targetAlpha)
+    public IEnumerator FadeOutIn()
+    {
+        yield return Fade(1f, 1f);
+        yield return new WaitForSeconds(0.3f);
+        yield return Fade(0f, 1f);
+    }
+    public IEnumerator Flash(int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            yield return Fade(1f, 0.1f);
+            yield return Fade(0f, 0.1f);
+        }
+    }
+
+    private IEnumerator Fade(float targetAlpha, float duration)
     {
         float startAlpha = fadeImage.color.a;
         float time = 0f;
 
-        while (time < 1f)
+        while (time < duration)
         {
             time += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, targetAlpha, time / 1f);
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, time / duration);
 
             fadeImage.color = new Color(0, 0, 0, alpha);
             yield return null;
         }
         fadeImage.color = new Color(0, 0, 0, targetAlpha);
-    }
+    }       
 }

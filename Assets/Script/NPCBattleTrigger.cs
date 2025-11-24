@@ -98,9 +98,11 @@ public class NPCBattleTrigger : MonoBehaviour
         };
     }
 
-    private IEnumerator StartBattle() // 화면 암전효과 추가 예정
+    private IEnumerator StartBattle()
     {
         yield return new WaitForSeconds(0.5f);
+        ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(battleSceneName);
     }
 }
