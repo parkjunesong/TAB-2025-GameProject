@@ -15,11 +15,12 @@ public class Effect_Damage : Effect_Base
         Unit target = SetTarget(caster);
         float damage = getDamage(caster, target);
         target.OnDamaged(damage);  
-        ScreenFader fader = GameObject.FindObjectOfType<ScreenFader>();
-        if (fader != null)
-        {
-            fader.HitFlash();  
-        }
+        
+        if (SkillEffectManager.Instance != null && target != null)
+    {
+        // 살짝 위로 띄우고 싶으면 + Vector3.up * 0.5f 같은 식으로 오프셋 줄 수도 있음
+        SkillEffectManager.Instance.PlayHitEffect(target.transform.position);
+    }
     }
     private float getDamage(Unit caster, Unit target)
     {     

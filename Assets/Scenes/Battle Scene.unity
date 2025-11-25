@@ -10049,6 +10049,7 @@ GameObject:
   - component: {fileID: 1654234335}
   - component: {fileID: 1654234337}
   - component: {fileID: 1654234338}
+  - component: {fileID: 1654234339}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10083,7 +10084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dcfc2708418ea648a52b391e902b9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleManager
-  UnitPrefab: {fileID: 0}
   PlayerUnits: []
   EnemyUnits: []
   isPlayerActioned: 0
@@ -10099,11 +10099,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eecf5294a2b87e541b3fceab5d78ead6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillManager
-  Skill_Type: {fileID: 0}
-  Skill_MaxPP: 0
-  Skill_Name: 
-  Skill_Icon: {fileID: 0}
-  Skill_Sound: {fileID: 0}
+  skillUi:
+  - {fileID: 139163380}
+  - {fileID: 139163380}
+  - {fileID: 139163380}
+  - {fileID: 139163380}
 --- !u!114 &1654234335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10154,8 +10154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92baf360722c405faf1ec04708c83a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  moveSpeed: 0
+  TextPanel: {fileID: 495619754}
 --- !u!114 &1654234338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10168,6 +10167,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e931261cef8f34a8ba2a1ec9b5d01c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1654234339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654234330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4aad5d6b1910a438a74c5aac40be6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffectPrefab: {fileID: 100006, guid: 16009fa64e3a1724ca5ec5ade141913f, type: 3}
 --- !u!1 &1668858324
 GameObject:
   m_ObjectHideFlags: 0

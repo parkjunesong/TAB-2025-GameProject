@@ -14,12 +14,6 @@ public class ScreenFader : MonoBehaviour
         Instance = this;
     }
 
-    public void HitFlash()
-    {
-        StartCoroutine(Flash(1));   
-    }
-
-
     public IEnumerator BattleEncount()
     {
         StartCoroutine(Flash(3));

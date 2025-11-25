@@ -11,5 +11,4 @@ public class UnitData : MonoBehaviour
     public List<Skill_Base> SkillList = new();
     public ItemData Item;
 
-    public GameObject HitEffectPrefab;
 }
