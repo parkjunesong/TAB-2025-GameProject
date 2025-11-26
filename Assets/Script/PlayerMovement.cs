@@ -7,13 +7,13 @@ public class PlayerMovement : MovingObject
 
     protected override void Awake()
     {
-        base.Awake(); // ºÎ¸ð(MovingObject)ÀÇ Awake ½ÇÇà
+        base.Awake(); // ï¿½Î¸ï¿½(MovingObject)ï¿½ï¿½ Awake ï¿½ï¿½ï¿½ï¿½
         gameObject.tag = "PlayerMe";
     }
     void Update()
     {
         if (!canMove) return;
-        if (isMoving) return; // ÀÌµ¿ Áß¿£ ÀÔ·Â ¹«½Ã
+        if (isMoving) return; // ï¿½Ìµï¿½ ï¿½ß¿ï¿½ ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         Vector2 input = Vector2.zero;
         if (Input.GetKey(KeyCode.W)) input = Vector2.up;

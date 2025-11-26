@@ -6,8 +6,8 @@ public class MovingObject : MonoBehaviour
 {
     protected static List<MovingObject> allMovingObjects = new();
 
-    protected float stepDistance = 1f;  // ÀÌµ¿ Ä­(1Ä­¾¿)
-    protected float moveSpeed = 4f;     // ÀÌµ¿ ¼Óµµ
+    protected float stepDistance = 1f;  // ï¿½Ìµï¿½ Ä­(1Ä­ï¿½ï¿½)
+    protected float moveSpeed = 4f;     // ï¿½Ìµï¿½ ï¿½Óµï¿½
     protected bool isMoving = false;
 
     protected Rigidbody2D rb;
@@ -15,7 +15,7 @@ public class MovingObject : MonoBehaviour
 
     protected virtual void Awake()
     {
-        // ±âº» ÄÄÆ÷³ÍÆ® ¼¼ÆÃ
+        // ï¿½âº» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         if (GetComponent<BoxCollider2D>() == null)
             gameObject.AddComponent<BoxCollider2D>();
 
@@ -26,7 +26,7 @@ public class MovingObject : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        // ±âº»°ª ÁöÁ¤(Idle_Down »óÅÂ·Î ½ÃÀÛ)
+        // ï¿½âº»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(Idle_Down ï¿½ï¿½ï¿½Â·ï¿½ ï¿½ï¿½ï¿½ï¿½)
         if (animator != null)
         {
             animator.SetFloat("MoveX", 0);
@@ -42,7 +42,7 @@ public class MovingObject : MonoBehaviour
     {
         isMoving = true;
 
-        // ÀÌµ¿ ¾Ö´Ï¸ÞÀÌ¼Ç Àû¿ë
+        // ï¿½Ìµï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (animator != null)
         {
             animator.SetFloat("MoveX", direction.x);
@@ -53,7 +53,7 @@ public class MovingObject : MonoBehaviour
         Vector2 startPos = rb.position;
         Vector2 targetPos = startPos + direction.normalized * stepDistance;
 
-        // ´Ù¸¥ MovingObject°¡ ÀÖÀ» °æ¿ì Ãæµ¹ Ã³¸®
+        // ï¿½Ù¸ï¿½ MovingObjectï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½æµ¹ Ã³ï¿½ï¿½
         foreach (var obj in allMovingObjects)
         {
             if (obj == this) continue;
@@ -65,7 +65,7 @@ public class MovingObject : MonoBehaviour
             }
         }
 
-        // Object ÅÂ±×¿Í Ãæµ¹ÇÏ¸é ¸ØÃã
+        // Object ï¿½Â±×¿ï¿½ ï¿½æµ¹ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½
         Collider2D hit = Physics2D.OverlapBox(targetPos, Vector2.one * 0.8f, 0f);
         if (hit != null && hit.CompareTag("Object"))
         {
@@ -81,7 +81,7 @@ public class MovingObject : MonoBehaviour
             yield break;
         }
 
-        // ½ÇÁ¦ ÀÌµ¿ ¼öÇà
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
         while ((targetPos - rb.position).sqrMagnitude > 0.001f)
         {
             Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);
