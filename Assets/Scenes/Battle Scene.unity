@@ -10179,7 +10179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4aad5d6b1910a438a74c5aac40be6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEffectPrefab: {fileID: 100006, guid: 16009fa64e3a1724ca5ec5ade141913f, type: 3}
 --- !u!1 &1668858324
 GameObject:
   m_ObjectHideFlags: 0

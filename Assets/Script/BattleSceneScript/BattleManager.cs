@@ -78,6 +78,8 @@ public class BattleManager : MonoBehaviour
             GetComponent<BattleUiManager>().UpdateUi();
             yield return new WaitForSeconds(4f);
         }
+        GetComponent<PokemonEntryManager>().UpdateUi();
+        GetComponent<BattleUiManager>().UpdateUi();
         TurnEnd();
     }
     public void TurnEnd()
