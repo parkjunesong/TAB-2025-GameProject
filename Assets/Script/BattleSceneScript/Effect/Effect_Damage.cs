@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Effect_Damage : Effect_Base
@@ -13,14 +14,18 @@ public class Effect_Damage : Effect_Base
         HitVFX = vfx;
     }
 
-    public override void Execute(Unit caster)
+    public override async void Execute(Unit caster)
     {
         Unit target = SetTarget(caster);
         float damage = getDamage(caster, target);
-        target.OnDamaged(damage);
 
-        VFXManager.Instance.HitVFX(HitVFX, target.transform.position);
+        VFXManager.Instance.HitVFX(HitVFX, target);
+        await Task.Delay(1000);
+        VFXManager.Instance.HitBlink(target);
+
+        target.OnDamaged(damage);
     }
+
     private float getDamage(Unit caster, Unit target)
     {     
         float damage = caster.Status.AT * Value * (2 * caster.Status.Level / 5f + 2);

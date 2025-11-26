@@ -13684,7 +13684,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: -5.5
   y: 1
-  teleportDelay: 0.1
 --- !u!1 &903335611
 GameObject:
   m_ObjectHideFlags: 0
@@ -65187,7 +65186,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: -69.5
   y: -4
-  teleportDelay: 0.1
 --- !u!1 &1700086131
 GameObject:
   m_ObjectHideFlags: 0

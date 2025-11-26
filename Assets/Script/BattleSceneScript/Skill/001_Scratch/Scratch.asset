@@ -17,4 +17,4 @@ MonoBehaviour:
   Skill_Name: "\uD598\uD034\uAE30"
   Skill_Icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   Skill_Sound: {fileID: 0}
-  VFX: {fileID: 100008, guid: 7b346dd5b9c872e4f811ddc8000908a1, type: 3}
+  VFX: {fileID: 100002, guid: 1cb4b58dd69a89e428e0b9472e64476b, type: 3}
