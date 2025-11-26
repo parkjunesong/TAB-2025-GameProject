@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class BattleManager : MonoBehaviour
 {
     public static BattleManager Instance;
@@ -22,6 +24,15 @@ public class BattleManager : MonoBehaviour
         GetComponent<SkillManager>().UpdateUi();
         GetComponent<PokemonEntryManager>().UpdateUi();
         GetComponent<BattleUiManager>().UpdateUi();
+        if (AudioManager.Instance != null)
+        {
+            Debug.Log("BattleManager: PlayBattleBgm 호출");
+            AudioManager.Instance.PlayBattleBgm();
+        }
+        else
+        {
+            Debug.Log("BattleManager: AudioManager.Instance 가 null");
+        }
     }
     public void BattleStart()
     {
@@ -55,7 +66,7 @@ public class BattleManager : MonoBehaviour
         isPlayerActioned = false;
         if (PlayerUnits[0].Status.SP >= EnemyUnits[0].Status.SP)
         {
-            DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name+"��(��) ������ �ұ�?" });
+            DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name+"��(��) ������ �ұ�?" });
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
@@ -75,7 +86,7 @@ public class BattleManager : MonoBehaviour
             GetComponent<BattleUiManager>().UpdateUi();
             yield return new WaitForSeconds(4f);
 
-            DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name + "��(��) ������ �ұ�?" });
+            DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name + "��(��) ������ �ұ�?" });
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
@@ -103,31 +114,50 @@ public class BattleManager : MonoBehaviour
     }
 
     public void OnUnitDied(List<Unit> targetList)
+{
+    // 🔹 1) 적 팀에서 누군가 죽었을 때, 살아 있는 적이 1마리면 마지막 BGM으로 교체
+    if (targetList == EnemyUnits)   // 지금 죽은 유닛이 적 팀일 때만 체크
     {
-        Unit tmp = null;
-        bool isAllDead = true;
-
-        foreach (Unit unit in targetList)
+        int aliveCount = 0;
+        foreach (var u in EnemyUnits)
         {
-            if (!unit.isDead)
-            {
-                isAllDead = false;
-                tmp = unit;
-                break;
-            }
+            if (u != null && !u.isDead)
+                aliveCount++;
         }
-        if (isAllDead) BattleEnd(targetList[0].Team);
-        else
+
+        if (aliveCount == 1)   // 적 포켓몬이 1마리만 남았으면
         {
-            targetList.Add(targetList[0]);
-            targetList.RemoveAt(0);
-            targetList.Remove(tmp);
-            targetList.Insert(0, tmp);
-            targetList[0].gameObject.SetActive(true);
-            GetComponent<PokemonEntryManager>().UpdateUi();
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayLastBattleBgm();
+            }
         }
     }
 
+    // 🔹 2) 원래 있던 순서 정리 + 교체 로직
+    Unit tmp = null;
+    bool isAllDead = true;
+
+    foreach (Unit unit in targetList)
+    {
+        if (!unit.isDead)
+        {
+            isAllDead = false;
+            tmp = unit;
+            break;
+        }
+    }
+    if (isAllDead) BattleEnd(targetList[0].Team);
+    else
+    {
+        targetList.Add(targetList[0]);
+        targetList.RemoveAt(0);
+        targetList.Remove(tmp);
+        targetList.Insert(0, tmp);
+        targetList[0].gameObject.SetActive(true);
+        GetComponent<PokemonEntryManager>().UpdateUi();
+    }
+}
     public List<Unit> allUnits()
     {
         List<Unit> units = new();
