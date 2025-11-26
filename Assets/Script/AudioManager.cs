@@ -21,6 +21,11 @@ public class AudioManager : MonoBehaviour
         bgmSource.loop = true;
         bgmSource.playOnAwake = false;
     }
+    private void Start()
+    {
+        PlayBgm(0);
+    }
+
     public void PlayBgm(int no)
     {
         bgmSource.Stop();       
