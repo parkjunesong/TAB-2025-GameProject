@@ -10100,10 +10100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillManager
   skillUi:
-  - {fileID: 139163380}
-  - {fileID: 139163380}
-  - {fileID: 139163380}
-  - {fileID: 139163380}
+  - {fileID: 1846790908}
+  - {fileID: 2014413254}
+  - {fileID: 895065681}
+  - {fileID: 2116381103}
 --- !u!114 &1654234335
 MonoBehaviour:
   m_ObjectHideFlags: 0
