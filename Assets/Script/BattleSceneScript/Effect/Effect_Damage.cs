@@ -5,22 +5,21 @@ using UnityEngine;
 public class Effect_Damage : Effect_Base
 {
     private TypeData Skill_Type;
-    public Effect_Damage(int val, int acc, int pri, TypeData type, bool isself = false) : base(val, acc, pri, isself) 
+    private GameObject HitVFX;
+
+    public Effect_Damage(int val, int acc, int pri, TypeData type, GameObject vfx, bool isself = false) : base(val, acc, pri, isself) 
     {
         Skill_Type = type;
+        HitVFX = vfx;
     }
 
     public override void Execute(Unit caster)
     {
         Unit target = SetTarget(caster);
         float damage = getDamage(caster, target);
-        target.OnDamaged(damage);  
-        
-        if (SkillEffectManager.Instance != null && target != null)
-    {
-        // 살짝 위로 띄우고 싶으면 + Vector3.up * 0.5f 같은 식으로 오프셋 줄 수도 있음
-        SkillEffectManager.Instance.PlayHitEffect(target.transform.position);
-    }
+        target.OnDamaged(damage);
+
+        VFXManager.Instance.HitVFX(HitVFX, target.transform.position);
     }
     private float getDamage(Unit caster, Unit target)
     {     

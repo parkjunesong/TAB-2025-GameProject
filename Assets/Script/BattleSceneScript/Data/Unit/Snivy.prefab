@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3125918537327863530}
   - component: {fileID: 7306418823643005432}
   - component: {fileID: 2543184108048944589}
-  - component: {fileID: -6296571292958788362}
   m_Layer: 0
   m_Name: Snivy
   m_TagString: Untagged
@@ -115,18 +114,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
   - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
   Item: {fileID: 0}
---- !u!114 &-6296571292958788362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7922051992064043930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feee529937bca03469a1681585faa6f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 7306418823643005432}
-  totalDuration: 0.3
-  interval: 0.05

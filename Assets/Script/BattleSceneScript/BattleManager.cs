@@ -59,13 +59,13 @@ public class BattleManager : MonoBehaviour
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(4f);
 
 
             yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(4f);
 
         }
         else
@@ -73,14 +73,13 @@ public class BattleManager : MonoBehaviour
             yield return StartCoroutine(EnemyUnits[0].GetComponent<EnemyUnit>().Action());
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(4f);
 
             DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name + "은(는) 무엇을 할까?" });
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
             GetComponent<BattleUiManager>().UpdateUi();
-            yield return new WaitForSeconds(5f);
-
+            yield return new WaitForSeconds(4f);
         }
         TurnEnd();
     }

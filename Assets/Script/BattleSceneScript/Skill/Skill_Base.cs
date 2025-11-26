@@ -10,6 +10,7 @@ public abstract class Skill_Base : ScriptableObject
     public string Skill_Name;
     public Sprite Skill_Icon;
     public AudioSource Skill_Sound;
+    public GameObject VFX;
     protected List<Effect_Base> EffectList = new();
 
     public virtual bool IsAvailable(Unit caster) { return true; } // 특수 발동조건 체크
