@@ -54,7 +54,7 @@ public class NPCBattleTrigger : MonoBehaviour
             {
                 hasTriggered = true;
                 hit.collider.GetComponent<PlayerMovement>().canMove = false; // 해당 부분을 통하여 배틀에 걸렸을때 플레이어가 움직이지 못하도록 함
-                StartCoroutine(StartBattle());
+                StartCoroutine(StartBattle());               
             }
         }
     }
@@ -100,9 +100,10 @@ public class NPCBattleTrigger : MonoBehaviour
 
     private IEnumerator StartBattle()
     {
+        AudioManager.Instance.PlayBgm(2);
         yield return new WaitForSeconds(0.5f);
         ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(battleSceneName);
     }
 }

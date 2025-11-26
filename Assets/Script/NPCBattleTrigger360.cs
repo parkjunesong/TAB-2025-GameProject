@@ -120,9 +120,10 @@ public class NPCBattleTrigger360 : MonoBehaviour
 
     private IEnumerator StartBattle()
     {
-        yield return new WaitForSeconds(0.5f);
+        AudioManager.Instance.PlayBgm(2);
+        yield return new WaitForSeconds(0.5f);        
         ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(battleSceneName);
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene(battleSceneName);        
     }
 }
