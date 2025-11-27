@@ -17,7 +17,8 @@ public class door : MonoBehaviour
             ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.FadeOutIn());
             yield return new WaitForSeconds(1f);
 
-            other.transform.position = new Vector2(x, y);                 
+            other.transform.position = new Vector2(x, y);
+            yield return new WaitForSeconds(1f);                 
             pm.canMove = true;
             pm.StartCoroutine(pm.MoveStep(Vector2.zero));      
         }
