@@ -18,7 +18,7 @@ public class door : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             other.transform.position = new Vector2(x, y);
-            yield return new WaitForSeconds(1f);                 
+            yield return new WaitForSeconds(1.5f);                 
             pm.canMove = true;
             pm.StartCoroutine(pm.MoveStep(Vector2.zero));      
         }
