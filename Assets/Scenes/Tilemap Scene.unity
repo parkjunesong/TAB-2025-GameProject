@@ -56605,6 +56605,7 @@ GameObject:
   - component: {fileID: 1418291748}
   - component: {fileID: 1418291747}
   - component: {fileID: 1418291746}
+  - component: {fileID: 1418291750}
   - component: {fileID: 1418291745}
   m_Layer: 0
   m_Name: Player
@@ -56642,7 +56643,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
+  m_AnimatePhysics: 1
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -56718,6 +56719,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1418291750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418291744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db94aba6ea04d64fad88c0047cc1a0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassLayer:
+    m_Bits: 64
+  checkRadius: 0.1
+  stepDistance: 1
+  lastPos: {x: 0, y: 0, z: 0}
+  movedAccum: 0
 --- !u!1 &1427433556
 GameObject:
   m_ObjectHideFlags: 0
@@ -63637,7 +63656,7 @@ GameObject:
   - component: {fileID: 1594961116}
   m_Layer: 0
   m_Name: pocketgrass
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63652,7 +63671,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0015, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1219943782}
@@ -65547,7 +65566,7 @@ GameObject:
   - component: {fileID: 1845981832}
   m_Layer: 5
   m_Name: fade
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
