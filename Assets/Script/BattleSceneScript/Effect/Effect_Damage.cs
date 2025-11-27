@@ -24,6 +24,11 @@ public class Effect_Damage : Effect_Base
         VFXManager.Instance.HitBlink(target);
 
         target.OnDamaged(damage);
+        if (AudioManager.Instance != null)
+        {
+            Debug.Log("[Effect_Damage] PlayHitSfx 호출");   // 디버그용
+            AudioManager.Instance.PlayHitSfx();
+        }
     }
 
     private float getDamage(Unit caster, Unit target)

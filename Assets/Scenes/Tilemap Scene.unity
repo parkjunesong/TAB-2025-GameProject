@@ -19211,7 +19211,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9fd1cff9b3c5b7c4dbf4954b5962d709, type: 3}
   - {fileID: 8300000, guid: da11d6c71b5892042bad22b3efb6b92d, type: 3}
   - {fileID: 8300000, guid: b8f4fbe6e906bfa47970d18bdef3269a, type: 3}
+  sfxSource: {fileID: 0}
   SFXList: []
+  hitSfx: {fileID: 8300000, guid: cd91abb16fb435940be701b3645dfcaa, type: 3}
+  selectSfx: {fileID: 0}
+  levelUpSfx: {fileID: 8300000, guid: 8620ebf1c81192b4b8db88b674ea8db0, type: 3}
+  healSfx: {fileID: 8300000, guid: 0d024d3a66fd2f74d9a14bf14bb770bc, type: 3}
+  catchSfx: {fileID: 8300000, guid: 6cfe29fbebf23b041b4f71ccaa4dc2ba, type: 3}
+  itemGetSfx: {fileID: 8300000, guid: a1f6363eeda3f404f87838ce50b127a7, type: 3}
+  lowHpSfx: {fileID: 8300000, guid: 751f1d63bbebf944fa3ead8da68a6a5c, type: 3}
+  battleWinSfx: {fileID: 8300000, guid: e551478e919aac24e96943b418fbcddd, type: 3}
+  doorOpenSfx: {fileID: 8300000, guid: a749ff367bafac642a41143412b39c96, type: 3}
+  walkSfx: {fileID: 8300000, guid: 956ec149f11984c4295647e6e2876429, type: 3}
+  grassWalkSfx: {fileID: 8300000, guid: 61100d06a27e53d44a0a83c015be9217, type: 3}
 --- !u!4 &1081544059
 Transform:
   m_ObjectHideFlags: 0
