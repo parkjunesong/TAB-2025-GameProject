@@ -99,6 +99,10 @@ public class BattleManager : MonoBehaviour
         {
             Debug.Log("Player Win");
         }
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayBattleWinSfx();
+        }
     }
     public void OnUnitDied(List<Unit> targetList)
     {

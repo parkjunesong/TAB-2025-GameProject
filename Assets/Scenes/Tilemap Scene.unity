@@ -19134,7 +19134,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9fd1cff9b3c5b7c4dbf4954b5962d709, type: 3}
   - {fileID: 8300000, guid: da11d6c71b5892042bad22b3efb6b92d, type: 3}
   - {fileID: 8300000, guid: b8f4fbe6e906bfa47970d18bdef3269a, type: 3}
+  sfxSource: {fileID: 0}
   SFXList: []
+  hitSfx: {fileID: 8300000, guid: cd91abb16fb435940be701b3645dfcaa, type: 3}
+  selectSfx: {fileID: 0}
+  levelUpSfx: {fileID: 8300000, guid: 8620ebf1c81192b4b8db88b674ea8db0, type: 3}
+  healSfx: {fileID: 8300000, guid: 0d024d3a66fd2f74d9a14bf14bb770bc, type: 3}
+  catchSfx: {fileID: 8300000, guid: 6cfe29fbebf23b041b4f71ccaa4dc2ba, type: 3}
+  itemGetSfx: {fileID: 8300000, guid: a1f6363eeda3f404f87838ce50b127a7, type: 3}
+  lowHpSfx: {fileID: 8300000, guid: 751f1d63bbebf944fa3ead8da68a6a5c, type: 3}
+  battleWinSfx: {fileID: 8300000, guid: e551478e919aac24e96943b418fbcddd, type: 3}
+  doorOpenSfx: {fileID: 8300000, guid: a749ff367bafac642a41143412b39c96, type: 3}
+  walkSfx: {fileID: 8300000, guid: 956ec149f11984c4295647e6e2876429, type: 3}
+  grassWalkSfx: {fileID: 8300000, guid: 61100d06a27e53d44a0a83c015be9217, type: 3}
 --- !u!4 &1081544059
 Transform:
   m_ObjectHideFlags: 0
@@ -59133,6 +59145,7 @@ GameObject:
   - component: {fileID: 1418291748}
   - component: {fileID: 1418291747}
   - component: {fileID: 1418291746}
+  - component: {fileID: 1418291750}
   - component: {fileID: 1418291745}
   m_Layer: 0
   m_Name: Player
@@ -59170,7 +59183,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
+  m_AnimatePhysics: 1
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -59246,6 +59259,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1418291750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418291744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db94aba6ea04d64fad88c0047cc1a0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassLayer:
+    m_Bits: 64
+  checkRadius: 0.1
+  stepDistance: 1
+  lastPos: {x: 0, y: 0, z: 0}
+  movedAccum: 0
 --- !u!1 &1427433556
 GameObject:
   m_ObjectHideFlags: 0
@@ -66126,7 +66157,7 @@ GameObject:
   - component: {fileID: 1594961116}
   m_Layer: 0
   m_Name: pocketgrass
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66141,7 +66172,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0015, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1219943782}
@@ -68036,7 +68067,7 @@ GameObject:
   - component: {fileID: 1845981832}
   m_Layer: 5
   m_Name: fade
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

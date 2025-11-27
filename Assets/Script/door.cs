@@ -20,7 +20,9 @@ public class door : MonoBehaviour
             other.transform.position = new Vector2(x, y);
             yield return new WaitForSeconds(1.5f);                 
             pm.canMove = true;
-            pm.StartCoroutine(pm.MoveStep(Vector2.zero));      
+            pm.StartCoroutine(pm.MoveStep(Vector2.zero)); 
+            if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayDoorOpenSfx();     
         }
     }
 }

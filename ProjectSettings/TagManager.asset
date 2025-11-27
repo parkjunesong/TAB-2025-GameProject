@@ -8,6 +8,7 @@ TagManager:
   - Object
   - PlayerMe
   - NPC
+  - Grass
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - MenuZone
   - Water
   - UI
-  - 
+  - Grass
   - 
   - 
   - 
