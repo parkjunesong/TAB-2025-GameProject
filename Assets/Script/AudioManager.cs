@@ -6,89 +6,77 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    // -------- BGM --------
     private AudioSource bgmSource;
-    public List<AudioClip> BgmList = new();
+    [SerializeField] private AudioClip fieldBGM;
+    [SerializeField] private AudioClip trainerBattle;
+    [SerializeField] private AudioClip victoryTrainer;
+    [SerializeField] private AudioClip wildBattle;
+    [SerializeField] private AudioClip victoryWild;
 
-    // -------- SFX --------
-    [Header("SFX")]
-    [SerializeField] private AudioSource sfxSource;   // Inspector에서 안 넣으면 Awake에서 자동 추가
-    public List<AudioClip> SFXList = new();           // 쓰면 되고, 안 써도 됨
+    private AudioSource sfxSource;
+    [SerializeField] private AudioClip battleUseItem;
+    [SerializeField] private AudioClip throwBall;
+    [SerializeField] private AudioClip battleRun;
+    [SerializeField] private AudioClip damageWeak;
+    [SerializeField] private AudioClip damageNormal;
+    [SerializeField] private AudioClip damageSuper;
 
-    [SerializeField] private AudioClip hitSfx;
-    [SerializeField] private AudioClip selectSfx;
-
-    [SerializeField] private AudioClip levelUpSfx;
-    [SerializeField] private AudioClip healSfx;
-    [SerializeField] private AudioClip catchSfx;
-    [SerializeField] private AudioClip itemGetSfx;
-    [SerializeField] private AudioClip lowHpSfx;
-    [SerializeField] private AudioClip battleWinSfx;
-    [SerializeField] private AudioClip doorOpenSfx;   
-    [SerializeField] private AudioClip walkSfx;       
-    [SerializeField] private AudioClip grassWalkSfx;
+    [SerializeField] private AudioClip doorEnter;
+    [SerializeField] private AudioClip doorExit;  
+    [SerializeField] private AudioClip menuOpen;
+    [SerializeField] private AudioClip cursor;
+    [SerializeField] private AudioClip exclaim;
+    [SerializeField] private AudioClip grass;
+    [SerializeField] private AudioClip bump;
+    
 
     void Awake()
     {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
+        if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
-
         DontDestroyOnLoad(gameObject);
 
-        // BGM 소스 준비
         bgmSource = gameObject.AddComponent<AudioSource>();
         bgmSource.loop = true;
         bgmSource.playOnAwake = false;
 
-        // SFX 소스 준비
-        if (sfxSource == null)
-            sfxSource = gameObject.AddComponent<AudioSource>();
-
+        sfxSource = gameObject.AddComponent<AudioSource>();
         sfxSource.loop = false;
         sfxSource.playOnAwake = false;
-        sfxSource.spatialBlend = 0f; // 2D 사운드
+        sfxSource.spatialBlend = 0f;
     }
-
     private void Start()
     {
-        PlayBgm(0);   // 처음 시작 BGM (필요 없으면 지워도 됨)
+        PlayBgm(fieldBGM);
     }
 
-    // -------- BGM 재생 --------
-    public void PlayBgm(int no)
+    public void PlayBgm(AudioClip clip)
     {
-        if (no < 0 || no >= BgmList.Count) return;
-
         bgmSource.Stop();
-        bgmSource.clip = BgmList[no];
+        bgmSource.clip = clip;
         bgmSource.Play();
     }
-
-    // -------- SFX 재생 --------
     public void PlaySfx(AudioClip clip)
-{
-    if (clip == null || sfxSource == null) return;
+    {
+        sfxSource.PlayOneShot(clip);  
+    }
+    public void PlayFieldBgm() => PlayBgm(fieldBGM);
+    public void PlayTrainerBattle() => PlayBgm(trainerBattle);
+    public void PlayVictoryTrainer() => PlayBgm(victoryTrainer);
+    public void PlayWildBattle() => PlayBgm(wildBattle);
+    public void PlayVictoryWild() => PlayBgm(victoryWild);
 
-    Debug.Log("[AudioManager] SFX 재생: " + clip.name);
-    sfxSource.PlayOneShot(clip);  
-
-}
-
-
-    public void PlayHitSfx()        => PlaySfx(hitSfx);
-    public void PlaySelectSfx()     => PlaySfx(selectSfx);
-
-    public void PlayLevelUpSfx()    => PlaySfx(levelUpSfx);
-    public void PlayHealSfx()       => PlaySfx(healSfx);
-    public void PlayCatchSfx()      => PlaySfx(catchSfx);
-    public void PlayItemGetSfx()    => PlaySfx(itemGetSfx);
-    public void PlayLowHpSfx()      => PlaySfx(lowHpSfx);
-    public void PlayBattleWinSfx()  => PlaySfx(battleWinSfx);
-    public void PlayDoorOpenSfx()   => PlaySfx(doorOpenSfx);
-    public void PlayWalkSfx()       => PlaySfx(walkSfx);
-    public void PlayGrassWalkSfx()  => PlaySfx(grassWalkSfx);
+    public void PlayBattleUseItem() => PlaySfx(battleUseItem);
+    public void PlayThrowBall() => PlaySfx(throwBall);
+    public void PlayBattleRun() => PlaySfx(battleRun);
+    public void PlayDamageWeak() => PlaySfx(damageWeak);
+    public void PlayDamageNormal() => PlaySfx(damageNormal);
+    public void PlayDamageSuper() => PlaySfx(damageSuper);
+    public void PlayDoorEnter() => PlaySfx(doorEnter);
+    public void PlayDoorExit() => PlaySfx(doorExit);
+    public void PlayMenuOpen() => PlaySfx(menuOpen);
+    public void PlayCursor() => PlaySfx(cursor);
+    public void PlayExclaim() => PlaySfx(exclaim);
+    public void PlayGrass() => PlaySfx(grass);
+    public void PlayBump() => PlaySfx(bump);
 }

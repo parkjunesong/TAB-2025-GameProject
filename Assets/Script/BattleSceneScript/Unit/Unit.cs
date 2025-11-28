@@ -20,14 +20,9 @@ public abstract class Unit : MonoBehaviour
         Status.OnDamaged(value);
 
         if (Status.HP <= 0) OnDied();
-    }
-    
+    }   
     public void OnHealed(float value)
     {
         Status.OnHealed(value);
-         if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayHealSfx();
-        }
     }
 }

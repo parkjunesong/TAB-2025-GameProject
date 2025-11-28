@@ -15,7 +15,7 @@ public class WildBattleEncounter : MonoBehaviour
 
             if (Random.value < 0.2f)
             {
-                AudioManager.Instance.PlayBgm(1);
+                AudioManager.Instance.PlayWildBattle();
                 GameObject.FindGameObjectWithTag("PlayerMe").GetComponent<PlayerMovement>().canMove = false;
 
                 yield return ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());

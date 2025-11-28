@@ -100,7 +100,7 @@ public class NPCBattleTrigger : MonoBehaviour
 
     private IEnumerator StartBattle()
     {
-        AudioManager.Instance.PlayBgm(2);
+        AudioManager.Instance.PlayTrainerBattle();
         yield return new WaitForSeconds(0.5f);
         ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
         yield return new WaitForSeconds(2.5f);

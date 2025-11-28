@@ -9,6 +9,7 @@ public class door : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerMe"))
         {
+            AudioManager.Instance.PlayDoorEnter();
             other.GetComponent<Animator>().SetBool("IsMoving", false);
             var pm = other.GetComponent<PlayerMovement>();       
             pm.StopAllCoroutines();
@@ -20,9 +21,7 @@ public class door : MonoBehaviour
             other.transform.position = new Vector2(x, y);
             yield return new WaitForSeconds(1.5f);                 
             pm.canMove = true;
-            pm.StartCoroutine(pm.MoveStep(Vector2.zero)); 
-            if (AudioManager.Instance != null)
-            AudioManager.Instance.PlayDoorOpenSfx();     
+            pm.StartCoroutine(pm.MoveStep(Vector2.zero));              
         }
     }
 }

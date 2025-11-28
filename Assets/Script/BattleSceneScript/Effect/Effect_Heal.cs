@@ -10,5 +10,6 @@ public class Effect_Heal : Effect_Base
     {
         Unit target = SetTarget(caster);
         target.OnHealed(Value);
+        AudioManager.Instance.PlayBattleUseItem();
     }
 }

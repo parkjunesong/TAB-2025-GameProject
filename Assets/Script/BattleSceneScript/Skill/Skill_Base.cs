@@ -8,9 +8,8 @@ public abstract class Skill_Base : ScriptableObject
     public TypeData Skill_Type;
     public int Skill_MaxPP;
     public string Skill_Name;
-    public Sprite Skill_Icon;
-    public AudioSource Skill_Sound;
-    public GameObject VFX;
+    public AudioClip Skill_SFX;
+    public GameObject Skill_VFX;
     protected List<Effect_Base> EffectList = new();
 
     public virtual bool IsAvailable(Unit caster) { return true; } // 특수 발동조건 체크

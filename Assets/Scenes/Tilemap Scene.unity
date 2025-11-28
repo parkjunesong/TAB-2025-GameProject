@@ -19130,23 +19130,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4a896bfcf8516c4eaea52982dc951f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BgmList:
-  - {fileID: 8300000, guid: 9fd1cff9b3c5b7c4dbf4954b5962d709, type: 3}
-  - {fileID: 8300000, guid: da11d6c71b5892042bad22b3efb6b92d, type: 3}
-  - {fileID: 8300000, guid: b8f4fbe6e906bfa47970d18bdef3269a, type: 3}
-  sfxSource: {fileID: 0}
-  SFXList: []
-  hitSfx: {fileID: 8300000, guid: cd91abb16fb435940be701b3645dfcaa, type: 3}
-  selectSfx: {fileID: 0}
-  levelUpSfx: {fileID: 8300000, guid: 8620ebf1c81192b4b8db88b674ea8db0, type: 3}
-  healSfx: {fileID: 8300000, guid: 0d024d3a66fd2f74d9a14bf14bb770bc, type: 3}
-  catchSfx: {fileID: 8300000, guid: 6cfe29fbebf23b041b4f71ccaa4dc2ba, type: 3}
-  itemGetSfx: {fileID: 8300000, guid: a1f6363eeda3f404f87838ce50b127a7, type: 3}
-  lowHpSfx: {fileID: 8300000, guid: 751f1d63bbebf944fa3ead8da68a6a5c, type: 3}
-  battleWinSfx: {fileID: 8300000, guid: e551478e919aac24e96943b418fbcddd, type: 3}
-  doorOpenSfx: {fileID: 8300000, guid: a749ff367bafac642a41143412b39c96, type: 3}
-  walkSfx: {fileID: 8300000, guid: 956ec149f11984c4295647e6e2876429, type: 3}
-  grassWalkSfx: {fileID: 8300000, guid: 61100d06a27e53d44a0a83c015be9217, type: 3}
+  fieldBGM: {fileID: 8300000, guid: 9fd1cff9b3c5b7c4dbf4954b5962d709, type: 3}
+  trainerBattle: {fileID: 8300000, guid: b8f4fbe6e906bfa47970d18bdef3269a, type: 3}
+  victoryTrainer: {fileID: 8300000, guid: 17f9006a09270594684b0d8c5f002b3c, type: 3}
+  wildBattle: {fileID: 8300000, guid: da11d6c71b5892042bad22b3efb6b92d, type: 3}
+  victoryWild: {fileID: 8300000, guid: 86b3a2dfeabffff43978b099dd577177, type: 3}
+  battleUseItem: {fileID: 8300000, guid: 41c1650aeef8b3241acfeef8db0c86cf, type: 3}
+  throwBall: {fileID: 8300000, guid: 8825d3a5cfbac38489f9be4484a1dee0, type: 3}
+  battleRun: {fileID: 8300000, guid: 64073b4ada0ece046a200925615e9480, type: 3}
+  damageWeak: {fileID: 8300000, guid: a1bc8a99bc8ec8d49a0e6a8395b67cc8, type: 3}
+  damageNormal: {fileID: 8300000, guid: becd2d21c55e14840b1bb499c72cb95b, type: 3}
+  damageSuper: {fileID: 8300000, guid: 414f99c88c19eda47bfa72ef669be735, type: 3}
+  doorEnter: {fileID: 8300000, guid: 5273e4366eb03ba46967cf2dbc469053, type: 3}
+  doorExit: {fileID: 8300000, guid: 7f28f2ffe7df0a9469df835ed520b4c6, type: 3}
+  menuOpen: {fileID: 8300000, guid: 0aab754bdb322d543b85d22fce85cfb1, type: 3}
+  cursor: {fileID: 8300000, guid: 5da160fa93f9c2c4a840142b0274a5b1, type: 3}
+  exclaim: {fileID: 8300000, guid: c87fa0595fbad7c4986102c4a957b1fa, type: 3}
+  grass: {fileID: 8300000, guid: 9995a4d7b932d68478df38349b32823b, type: 3}
+  bump: {fileID: 8300000, guid: 0ae21790ade020641b5154f9bcd73e52, type: 3}
 --- !u!4 &1081544059
 Transform:
   m_ObjectHideFlags: 0
@@ -59271,12 +59272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db94aba6ea04d64fad88c0047cc1a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grassLayer:
-    m_Bits: 64
-  checkRadius: 0.1
-  stepDistance: 1
-  lastPos: {x: 0, y: 0, z: 0}
-  movedAccum: 0
 --- !u!1 &1427433556
 GameObject:
   m_ObjectHideFlags: 0

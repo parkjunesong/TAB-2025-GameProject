@@ -2,13 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "Scratch", menuName = "Scriptable Object/Skill/001_Scratch")]
+[CreateAssetMenu(fileName = "QuickAttack", menuName = "Scriptable Object/Skill/004_QuickAttack")]
 
-public class _001_Scratch : Skill_Base
+public class _004_QuickAttack : Skill_Base
 {
     public override void SetEffect()
     {
-        Effect_Damage effect = new Effect_Damage(40, 100, 0, Skill_Type, Skill_VFX);
+        Effect_Damage effect = new Effect_Damage(40, 100, 1, Skill_Type, Skill_VFX);
         EffectList.Add(effect);
     }
     public override void Execute(Unit caster)
