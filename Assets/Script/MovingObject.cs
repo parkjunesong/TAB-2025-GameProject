@@ -59,6 +59,8 @@ public class MovingObject : MonoBehaviour
             if (obj == this) continue;
             if (Vector2.Distance(obj.rb.position, targetPos) < 0.1f)
             {
+                if (AudioManager.Instance != null)
+                AudioManager.Instance.PlayBump();  
                 isMoving = false;
                 if (animator != null) animator.SetBool("IsMoving", false);
                 yield break;
@@ -69,6 +71,8 @@ public class MovingObject : MonoBehaviour
         Collider2D hit = Physics2D.OverlapBox(targetPos, Vector2.one * 0.8f, 0f);
         if (hit != null && hit.CompareTag("Object"))
         {
+            if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayBump();   
             isMoving = false;
             if (animator != null) animator.SetBool("IsMoving", false);
             yield break;
@@ -76,6 +80,8 @@ public class MovingObject : MonoBehaviour
 
         if (hit != null && hit.CompareTag("NPC"))
         {
+            if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayBump(); 
             isMoving = false;
             if (animator != null) animator.SetBool("IsMoving", false);
             yield break;

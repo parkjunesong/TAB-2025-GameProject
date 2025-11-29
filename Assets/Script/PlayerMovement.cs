@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerMovement : MovingObject
 {
     public bool canMove = true;
+    private bool isInGrass = false;
+
 
     protected override void Awake()
     {
@@ -22,5 +24,34 @@ public class PlayerMovement : MovingObject
         else if (Input.GetKey(KeyCode.D)) input = Vector2.right;
 
         if (input != Vector2.zero) StartCoroutine(MoveStep(input));
+        if (input != Vector2.zero)
+        {
+            // ⭐ 한 칸 움직이기 직전에, 지금 수풀 안이면 풀 소리 재생
+            if (isInGrass && AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayGrass();
+            }
+
+            StartCoroutine(MoveStep(input));
+        }
+    }
+     private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Grass"))
+        {
+            isInGrass = true;
+
+            // 첫 칸 진입 소리도 내고 싶으면 여기에도 한 번 더:
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlayGrass();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Grass"))
+        {
+            isInGrass = false;
+        }
     }
 }

@@ -24,6 +24,8 @@ public class SkillManager : MonoBehaviour
 
     public void UseSkillNo(int i)
     {
+        if (AudioManager.Instance != null)
+        AudioManager.Instance.PlayCursor();
         BattleManager.Instance.PlayerUnits[0].Skill.UseSkillNo(i);
         BattleUiManager.Instance.ChangeUiScreenActiveState(false);
 
