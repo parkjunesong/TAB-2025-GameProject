@@ -98,6 +98,7 @@ public class BattleManager : MonoBehaviour
         else if (team == "Enemy")
         {
             Debug.Log("Player Win");
+            AudioManager.Instance.PlayVictoryTrainer();
         }
     }
     public void OnUnitDied(List<Unit> targetList)

@@ -38,16 +38,19 @@ public class UiManager : MonoBehaviour
         MainButtons.SetActive(true);
         PokemonButtons.SetActive(false);
         BagButtons.SetActive(false);
+        AudioManager.Instance.PlayMenuOpen();
     }
     public void BagButton()
     {
         MainButtons.SetActive(false);
         BagButtons.SetActive(true);
         GetComponent<BagManager>().ViewItems();
+        AudioManager.Instance.PlayCursor();
     }
     public void PokemonButton()
     {
         MainButtons.SetActive(false);
         PokemonButtons.SetActive(true);
+        AudioManager.Instance.PlayCursor();
     }
 }

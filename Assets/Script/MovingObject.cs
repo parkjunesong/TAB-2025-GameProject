@@ -6,8 +6,8 @@ public class MovingObject : MonoBehaviour
 {
     protected static List<MovingObject> allMovingObjects = new();
 
-    protected float stepDistance = 1f;  // �̵� ĭ(1ĭ��)
-    protected float moveSpeed = 4f;     // �̵� �ӵ�
+    protected float stepDistance = 1f; 
+    protected float moveSpeed = 4f;    
     protected bool isMoving = false;
 
     protected Rigidbody2D rb;
@@ -15,7 +15,6 @@ public class MovingObject : MonoBehaviour
 
     protected virtual void Awake()
     {
-        // �⺻ ������Ʈ ����
         if (GetComponent<BoxCollider2D>() == null)
             gameObject.AddComponent<BoxCollider2D>();
 
@@ -26,7 +25,6 @@ public class MovingObject : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        // �⺻�� ����(Idle_Down ���·� ����)
         if (animator != null)
         {
             animator.SetFloat("MoveX", 0);
@@ -42,7 +40,6 @@ public class MovingObject : MonoBehaviour
     {
         isMoving = true;
 
-        // �̵� �ִϸ��̼� ����
         if (animator != null)
         {
             animator.SetFloat("MoveX", direction.x);
@@ -53,26 +50,20 @@ public class MovingObject : MonoBehaviour
         Vector2 startPos = rb.position;
         Vector2 targetPos = startPos + direction.normalized * stepDistance;
 
-        // �ٸ� MovingObject�� ���� ��� �浹 ó��
         foreach (var obj in allMovingObjects)
         {
             if (obj == this) continue;
             if (Vector2.Distance(obj.rb.position, targetPos) < 0.1f)
             {
-                if (AudioManager.Instance != null)
-                AudioManager.Instance.PlayBump();  
                 isMoving = false;
                 if (animator != null) animator.SetBool("IsMoving", false);
                 yield break;
             }
         }
 
-        // Object �±׿� �浹�ϸ� ����
         Collider2D hit = Physics2D.OverlapBox(targetPos, Vector2.one * 0.8f, 0f);
         if (hit != null && hit.CompareTag("Object"))
-        {
-            if (AudioManager.Instance != null)
-            AudioManager.Instance.PlayBump();   
+        { 
             isMoving = false;
             if (animator != null) animator.SetBool("IsMoving", false);
             yield break;
@@ -80,14 +71,11 @@ public class MovingObject : MonoBehaviour
 
         if (hit != null && hit.CompareTag("NPC"))
         {
-            if (AudioManager.Instance != null)
-            AudioManager.Instance.PlayBump(); 
             isMoving = false;
             if (animator != null) animator.SetBool("IsMoving", false);
             yield break;
         }
 
-        // ���� �̵� ����
         while ((targetPos - rb.position).sqrMagnitude > 0.001f)
         {
             Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);

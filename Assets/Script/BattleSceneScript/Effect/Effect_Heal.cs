@@ -8,8 +8,8 @@ public class Effect_Heal : Effect_Base
 
     public override void Execute(Unit caster)
     {
-        Unit target = SetTarget(caster);
+        Unit target = BattleTarget.getTarget(caster, IsSelf);
         target.OnHealed(Value);
-        AudioManager.Instance.PlayBattleUseItem();
+        AudioManager.Instance.PlayUseItem();
     }
 }

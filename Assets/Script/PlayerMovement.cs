@@ -9,13 +9,13 @@ public class PlayerMovement : MovingObject
 
     protected override void Awake()
     {
-        base.Awake(); // �θ�(MovingObject)�� Awake ����
+        base.Awake();
         gameObject.tag = "PlayerMe";
     }
     void Update()
     {
         if (!canMove) return;
-        if (isMoving) return; // �̵� �߿� �Է� ����
+        if (isMoving) return;
 
         Vector2 input = Vector2.zero;
         if (Input.GetKey(KeyCode.W)) input = Vector2.up;
@@ -26,7 +26,6 @@ public class PlayerMovement : MovingObject
         if (input != Vector2.zero) StartCoroutine(MoveStep(input));
         if (input != Vector2.zero)
         {
-            // ⭐ 한 칸 움직이기 직전에, 지금 수풀 안이면 풀 소리 재생
             if (isInGrass && AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayGrass();
@@ -40,10 +39,6 @@ public class PlayerMovement : MovingObject
         if (other.CompareTag("Grass"))
         {
             isInGrass = true;
-
-            // 첫 칸 진입 소리도 내고 싶으면 여기에도 한 번 더:
-            if (AudioManager.Instance != null)
-                AudioManager.Instance.PlayGrass();
         }
     }
 

@@ -19135,13 +19135,12 @@ MonoBehaviour:
   victoryTrainer: {fileID: 8300000, guid: 17f9006a09270594684b0d8c5f002b3c, type: 3}
   wildBattle: {fileID: 8300000, guid: da11d6c71b5892042bad22b3efb6b92d, type: 3}
   victoryWild: {fileID: 8300000, guid: 86b3a2dfeabffff43978b099dd577177, type: 3}
-  battleUseItem: {fileID: 8300000, guid: 41c1650aeef8b3241acfeef8db0c86cf, type: 3}
+  useItem: {fileID: 8300000, guid: 41c1650aeef8b3241acfeef8db0c86cf, type: 3}
   throwBall: {fileID: 8300000, guid: 8825d3a5cfbac38489f9be4484a1dee0, type: 3}
   battleRun: {fileID: 8300000, guid: 64073b4ada0ece046a200925615e9480, type: 3}
   damageWeak: {fileID: 8300000, guid: a1bc8a99bc8ec8d49a0e6a8395b67cc8, type: 3}
   damageNormal: {fileID: 8300000, guid: becd2d21c55e14840b1bb499c72cb95b, type: 3}
   damageSuper: {fileID: 8300000, guid: 414f99c88c19eda47bfa72ef669be735, type: 3}
-  doorEnter: {fileID: 8300000, guid: 5273e4366eb03ba46967cf2dbc469053, type: 3}
   doorExit: {fileID: 8300000, guid: 7f28f2ffe7df0a9469df835ed520b4c6, type: 3}
   menuOpen: {fileID: 8300000, guid: 0aab754bdb322d543b85d22fce85cfb1, type: 3}
   cursor: {fileID: 8300000, guid: 5da160fa93f9c2c4a840142b0274a5b1, type: 3}
@@ -59146,7 +59145,6 @@ GameObject:
   - component: {fileID: 1418291748}
   - component: {fileID: 1418291747}
   - component: {fileID: 1418291746}
-  - component: {fileID: 1418291750}
   - component: {fileID: 1418291745}
   m_Layer: 0
   m_Name: Player
@@ -59260,18 +59258,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1418291750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418291744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5db94aba6ea04d64fad88c0047cc1a0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1427433556
 GameObject:
   m_ObjectHideFlags: 0

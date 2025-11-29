@@ -14,20 +14,18 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip victoryWild;
 
     private AudioSource sfxSource;
-    [SerializeField] private AudioClip battleUseItem;
+    [SerializeField] private AudioClip useItem;
     [SerializeField] private AudioClip throwBall;
     [SerializeField] private AudioClip battleRun;
     [SerializeField] private AudioClip damageWeak;
     [SerializeField] private AudioClip damageNormal;
     [SerializeField] private AudioClip damageSuper;
 
-    [SerializeField] private AudioClip doorEnter;
-    [SerializeField] private AudioClip doorExit;  
+    [SerializeField] private AudioClip doorExit;
     [SerializeField] private AudioClip menuOpen;
     [SerializeField] private AudioClip cursor;
     [SerializeField] private AudioClip exclaim;
     [SerializeField] private AudioClip grass;
-    [SerializeField] private AudioClip bump;
     
 
     void Awake()
@@ -44,6 +42,7 @@ public class AudioManager : MonoBehaviour
         sfxSource.loop = false;
         sfxSource.playOnAwake = false;
         sfxSource.spatialBlend = 0f;
+        sfxSource.volume = 0.6f;
     }
     private void Start()
     {
@@ -66,17 +65,15 @@ public class AudioManager : MonoBehaviour
     public void PlayWildBattle() => PlayBgm(wildBattle);
     public void PlayVictoryWild() => PlayBgm(victoryWild);
 
-    public void PlayBattleUseItem() => PlaySfx(battleUseItem);
+    public void PlayUseItem() => PlaySfx(useItem);
     public void PlayThrowBall() => PlaySfx(throwBall);
     public void PlayBattleRun() => PlaySfx(battleRun);
     public void PlayDamageWeak() => PlaySfx(damageWeak);
     public void PlayDamageNormal() => PlaySfx(damageNormal);
     public void PlayDamageSuper() => PlaySfx(damageSuper);
-    public void PlayDoorEnter() => PlaySfx(doorEnter);
     public void PlayDoorExit() => PlaySfx(doorExit);
     public void PlayMenuOpen() => PlaySfx(menuOpen);
     public void PlayCursor() => PlaySfx(cursor);
     public void PlayExclaim() => PlaySfx(exclaim);
     public void PlayGrass() => PlaySfx(grass);
-    public void PlayBump() => PlaySfx(bump);
 }

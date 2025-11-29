@@ -51,11 +51,7 @@ public class BattleUiManager : MonoBehaviour
     {
         UiScreen.SetActive(isActive);
         PlayerHpbar.gameObject.SetActive(!isActive);
-        EnemyHpbar.gameObject.SetActive(!isActive);
-        if (isActive && AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayMenuOpen();
-        }
+        EnemyHpbar.gameObject.SetActive(!isActive);      
     }
     public void MainButton()
     {
@@ -64,44 +60,24 @@ public class BattleUiManager : MonoBehaviour
         PokemonButtons.SetActive(false);
         BagButtons.SetActive(false);
         DialogueManager.Instance.EndDialogue();
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayCursor();   // 메인으로 돌아가는 느낌 → 커서/선택 SFX
-        }
     }
     public void FightButton()
-    {
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayMenuOpen();
-        }
+    {     
         MainButtons.SetActive(false);
         FightButtons.SetActive(true);
     }
     public void BagButton()
-    {
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayMenuOpen();
-        }
+    {      
         MainButtons.SetActive(false);
         BagButtons.SetActive(true);
         GetComponent<BagManager>().ViewItems();
     }
     public void RunButton()
     {
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayBattleRun();
-        }
-        Debug.Log("r");
+        AudioManager.Instance.PlayBattleRun();
     }
     public void PokemonButton()
-    {
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayMenuOpen();
-        }
+    {       
         MainButtons.SetActive(false);
         PokemonButtons.SetActive(true);
     } 

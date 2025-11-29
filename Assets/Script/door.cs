@@ -9,7 +9,7 @@ public class door : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerMe"))
         {
-            AudioManager.Instance.PlayDoorEnter();
+            AudioManager.Instance.PlayDoorExit();
             other.GetComponent<Animator>().SetBool("IsMoving", false);
             var pm = other.GetComponent<PlayerMovement>();       
             pm.StopAllCoroutines();
