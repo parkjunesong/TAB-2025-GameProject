@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WildBattleEncounter : MonoBehaviour
 {
+    public List<UnitData> wildUnits = new();
     private Coroutine encounter;
     private IEnumerator Encounter()
     {
@@ -21,11 +22,21 @@ public class WildBattleEncounter : MonoBehaviour
                 yield return ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
 
                 yield return new WaitForSeconds(3f);
-                SceneManager.LoadScene("Battle Scene");
+                StartWildBattle();
             }
         }
     }
-   
+    private void StartWildBattle()
+    {
+        UnitData selected = wildUnits[Random.Range(0, wildUnits.Count)];
+
+        var BUM = GameObject.Find("DataManager").GetComponent<BattleUnitManager>();
+        BUM.EnemyUnitData.Clear();
+        BUM.EnemyUnitData.Add(selected);
+
+        SceneManager.LoadScene("Battle Scene");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PlayerMe")) { encounter = StartCoroutine(Encounter()); }

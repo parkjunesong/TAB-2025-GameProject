@@ -41,7 +41,7 @@ public class DialogueManager : MonoBehaviour
         else yield return new WaitUntil(() =>
         {
             timer += Time.deltaTime;
-            return Input.GetKeyDown(KeyCode.Mouse0) || timer >= 5f;
+            return Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Z) || timer >= 5f;
         });
 
         if (index < Dialogue.Count - 1)

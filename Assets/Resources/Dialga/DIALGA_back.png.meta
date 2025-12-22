@@ -1,0 +1,1950 @@
+fileFormatVersion: 2
+guid: 4e22ed6bc47573946b7a0a7371b2d4de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6788239542146344561
+    second: DIALGA_back_0
+  - first:
+      213: 6461827029167432505
+    second: DIALGA_back_1
+  - first:
+      213: -7211289950063047979
+    second: DIALGA_back_2
+  - first:
+      213: -5691297181034001933
+    second: DIALGA_back_3
+  - first:
+      213: 5284522967185722210
+    second: DIALGA_back_4
+  - first:
+      213: -7796313105037539859
+    second: DIALGA_back_5
+  - first:
+      213: -6378266415180650290
+    second: DIALGA_back_6
+  - first:
+      213: -6267742650141859471
+    second: DIALGA_back_7
+  - first:
+      213: 8871110382104514901
+    second: DIALGA_back_8
+  - first:
+      213: 2774116330214519514
+    second: DIALGA_back_9
+  - first:
+      213: 250623544114969862
+    second: DIALGA_back_10
+  - first:
+      213: 7594054805943634297
+    second: DIALGA_back_11
+  - first:
+      213: 7049106861507305456
+    second: DIALGA_back_12
+  - first:
+      213: -1647077753067856439
+    second: DIALGA_back_13
+  - first:
+      213: -1920029498572510397
+    second: DIALGA_back_14
+  - first:
+      213: -1323273888329382754
+    second: DIALGA_back_15
+  - first:
+      213: 3465724664436894014
+    second: DIALGA_back_16
+  - first:
+      213: -9005627392843476170
+    second: DIALGA_back_17
+  - first:
+      213: 7253659963056182900
+    second: DIALGA_back_18
+  - first:
+      213: -7874307346180494631
+    second: DIALGA_back_19
+  - first:
+      213: -7273481228273576310
+    second: DIALGA_back_20
+  - first:
+      213: 6698342804812910797
+    second: DIALGA_back_21
+  - first:
+      213: 1857990490210378898
+    second: DIALGA_back_22
+  - first:
+      213: 7056296272280009870
+    second: DIALGA_back_23
+  - first:
+      213: 4163659540370348810
+    second: DIALGA_back_24
+  - first:
+      213: -1656373375620366458
+    second: DIALGA_back_25
+  - first:
+      213: 6921564343612358131
+    second: DIALGA_back_26
+  - first:
+      213: 1245874523356034679
+    second: DIALGA_back_27
+  - first:
+      213: -5719929026700560465
+    second: DIALGA_back_28
+  - first:
+      213: -8296479445555303092
+    second: DIALGA_back_29
+  - first:
+      213: -2754330208345914190
+    second: DIALGA_back_30
+  - first:
+      213: 2055364622273432668
+    second: DIALGA_back_31
+  - first:
+      213: -8021546011982187750
+    second: DIALGA_back_32
+  - first:
+      213: 7962419436791008476
+    second: DIALGA_back_33
+  - first:
+      213: 4540685401344760308
+    second: DIALGA_back_34
+  - first:
+      213: -2212507995721812119
+    second: DIALGA_back_35
+  - first:
+      213: -9164387361154251486
+    second: DIALGA_back_36
+  - first:
+      213: -3439673182805638955
+    second: DIALGA_back_37
+  - first:
+      213: -7123167391167531697
+    second: DIALGA_back_38
+  - first:
+      213: 3003605697388370973
+    second: DIALGA_back_39
+  - first:
+      213: -1416685464478680183
+    second: DIALGA_back_40
+  - first:
+      213: -1595875278551305604
+    second: DIALGA_back_41
+  - first:
+      213: -8722336613677938587
+    second: DIALGA_back_42
+  - first:
+      213: 1623995479389357593
+    second: DIALGA_back_43
+  - first:
+      213: -7851644138254863013
+    second: DIALGA_back_44
+  - first:
+      213: 1899505764500559073
+    second: DIALGA_back_45
+  - first:
+      213: 4616335204749672709
+    second: DIALGA_back_46
+  - first:
+      213: -2856015201543671683
+    second: DIALGA_back_47
+  - first:
+      213: 7943320426070296752
+    second: DIALGA_back_48
+  - first:
+      213: 717671138954422566
+    second: DIALGA_back_49
+  - first:
+      213: 6563819201475349811
+    second: DIALGA_back_50
+  - first:
+      213: -3341042543856401167
+    second: DIALGA_back_51
+  - first:
+      213: -6239464890346764412
+    second: DIALGA_back_52
+  - first:
+      213: 4128629145065408394
+    second: DIALGA_back_53
+  - first:
+      213: 7511379203948616050
+    second: DIALGA_back_54
+  - first:
+      213: -515930464959478633
+    second: DIALGA_back_55
+  - first:
+      213: -5185309445664289333
+    second: DIALGA_back_56
+  - first:
+      213: 2938617879264192339
+    second: DIALGA_back_57
+  - first:
+      213: 3359756749765496511
+    second: DIALGA_back_58
+  - first:
+      213: -328194591768555120
+    second: DIALGA_back_59
+  - first:
+      213: 8652161436558904434
+    second: DIALGA_back_60
+  - first:
+      213: 5033137661917450868
+    second: DIALGA_back_61
+  - first:
+      213: 4571719267029514091
+    second: DIALGA_back_62
+  - first:
+      213: 5753304656048380493
+    second: DIALGA_back_63
+  - first:
+      213: 5663300383033070790
+    second: DIALGA_back_64
+  - first:
+      213: 7937041829377602554
+    second: DIALGA_back_65
+  - first:
+      213: -6089687976366975755
+    second: DIALGA_back_66
+  - first:
+      213: 3245956033447229163
+    second: DIALGA_back_67
+  - first:
+      213: 8945924102438704737
+    second: DIALGA_back_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DIALGA_back_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f895b102a145bc1a0800000000000000
+      internalID: -6788239542146344561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933ea8162750da950800000000000000
+      internalID: 6461827029167432505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dac52a5ff95ceb90800000000000000
+      internalID: -7211289950063047979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9494d1e537401b0800000000000000
+      internalID: -5691297181034001933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b8f7ad3a5665940800000000000000
+      internalID: 5284522967185722210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5c380a98eedc390800000000000000
+      internalID: -7796313105037539859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec86a582d78db77a0800000000000000
+      internalID: -6378266415180650290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171aab284418409a0800000000000000
+      internalID: -6267742650141859471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_8
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5519e9034e38c1b70800000000000000
+      internalID: 8871110382104514901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_9
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2fb0cba14af7620800000000000000
+      internalID: 2774116330214519514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_10
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d725719c46a7300800000000000000
+      internalID: 250623544114969862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_11
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9794e196c90836960800000000000000
+      internalID: 7594054805943634297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_12
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff59efb75573d160800000000000000
+      internalID: 7049106861507305456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_13
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd11fa92876429e0800000000000000
+      internalID: -1647077753067856439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_14
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b6053085faa55e0800000000000000
+      internalID: -1920029498572510397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_15
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94c399d869c2ade0800000000000000
+      internalID: -1323273888329382754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_16
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e392219583ab81030800000000000000
+      internalID: 3465724664436894014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_17
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633990e9995950380800000000000000
+      internalID: -9005627392843476170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_18
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476df6b0e4d2aa460800000000000000
+      internalID: 7253659963056182900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_19
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9daa9a24037d8b290800000000000000
+      internalID: -7874307346180494631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_20
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8618440c576f0b90800000000000000
+      internalID: -7273481228273576310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_21
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0daa8aa4b45fc50800000000000000
+      internalID: 6698342804812910797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_22
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2942b0db188e8c910800000000000000
+      internalID: 1857990490210378898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_23
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cb923e2100de160800000000000000
+      internalID: 7056296272280009870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_24
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bd07dba4a48c930800000000000000
+      internalID: 4163659540370348810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_25
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fbbb2d0316309e0800000000000000
+      internalID: -1656373375620366458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_26
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd360739165e0060800000000000000
+      internalID: 6921564343612358131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_27
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776785f274c3a4110800000000000000
+      internalID: 1245874523356034679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_28
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7311f0bdabe90b0800000000000000
+      internalID: -5719929026700560465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_29
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4da851a6ebfcdc80800000000000000
+      internalID: -8296479445555303092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_30
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b40a61c447a6c9d0800000000000000
+      internalID: -2754330208345914190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_31
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c4382fb3f168c10800000000000000
+      internalID: 2055364622273432668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_32
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13b95ee66ebda090800000000000000
+      internalID: -8021546011982187750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_33
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc08928a42308e60800000000000000
+      internalID: 7962419436791008476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_34
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9d4ff9051c30f30800000000000000
+      internalID: 4540685401344760308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_35
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9673a4443b79b41e0800000000000000
+      internalID: -2212507995721812119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_36
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2254252004e81d080800000000000000
+      internalID: -9164387361154251486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_37
+      rect:
+        serializedVersion: 2
+        x: 3145
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0ce63e673d340d0800000000000000
+      internalID: -3439673182805638955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_38
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4530d57ffc652d90800000000000000
+      internalID: -7123167391167531697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_39
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c5c2ec773fea920800000000000000
+      internalID: 3003605697388370973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_40
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bf943731ce65ce0800000000000000
+      internalID: -1416685464478680183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_41
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c723f14b3ef4ad9e0800000000000000
+      internalID: -1595875278551305604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_42
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568c752101904f680800000000000000
+      internalID: -8722336613677938587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_43
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916c7d1c847998610800000000000000
+      internalID: 1623995479389357593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_44
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b557a8c814b590390800000000000000
+      internalID: -7851644138254863013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_45
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4dcd5cd666c5a10800000000000000
+      internalID: 1899505764500559073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_46
+      rect:
+        serializedVersion: 2
+        x: 3910
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5010c3b0964801040800000000000000
+      internalID: 4616335204749672709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_47
+      rect:
+        serializedVersion: 2
+        x: 3995
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70bfd65e456d58d0800000000000000
+      internalID: -2856015201543671683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_48
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8460d87d75c3e60800000000000000
+      internalID: 7943320426070296752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_49
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629ade6391ea5f900800000000000000
+      internalID: 717671138954422566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_50
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d83d189ce571b50800000000000000
+      internalID: 6563819201475349811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_51
+      rect:
+        serializedVersion: 2
+        x: 4335
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4c8f9028b32a1d0800000000000000
+      internalID: -3341042543856401167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_52
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4870c568db7f869a0800000000000000
+      internalID: -6239464890346764412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_53
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87c2f04556db4930800000000000000
+      internalID: 4128629145065408394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_54
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2791d98c697cd3860800000000000000
+      internalID: 7511379203948616050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_55
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794c943c9fb07d8f0800000000000000
+      internalID: -515930464959478633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_56
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdc3b838841a08b0800000000000000
+      internalID: -5185309445664289333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_57
+      rect:
+        serializedVersion: 2
+        x: 4845
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3576728446118c820800000000000000
+      internalID: 2938617879264192339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_58
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe4e7196f040ae20800000000000000
+      internalID: 3359756749765496511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_59
+      rect:
+        serializedVersion: 2
+        x: 5015
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0915e64f1c4027bf0800000000000000
+      internalID: -328194591768555120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_60
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c4d654cf6a21870800000000000000
+      internalID: 8652161436558904434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_61
+      rect:
+        serializedVersion: 2
+        x: 5185
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472da3c690c49d540800000000000000
+      internalID: 5033137661917450868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_62
+      rect:
+        serializedVersion: 2
+        x: 5270
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b677a1c8372027f30800000000000000
+      internalID: 4571719267029514091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_63
+      rect:
+        serializedVersion: 2
+        x: 5355
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a5d543a18d7df40800000000000000
+      internalID: 5753304656048380493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_64
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4150361b5189e40800000000000000
+      internalID: 5663300383033070790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_65
+      rect:
+        serializedVersion: 2
+        x: 5525
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3f777dd79062e60800000000000000
+      internalID: 7937041829377602554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_66
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4ddafcc051d7ba0800000000000000
+      internalID: -6089687976366975755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_67
+      rect:
+        serializedVersion: 2
+        x: 5695
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6782a80d3fb0d20800000000000000
+      internalID: 3245956033447229163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIALGA_back_68
+      rect:
+        serializedVersion: 2
+        x: 5780
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166d679d29e462c70800000000000000
+      internalID: 8945924102438704737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5655336b9c6126a4baec048d42f6b6ed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DIALGA_back_0: -6788239542146344561
+      DIALGA_back_1: 6461827029167432505
+      DIALGA_back_10: 250623544114969862
+      DIALGA_back_11: 7594054805943634297
+      DIALGA_back_12: 7049106861507305456
+      DIALGA_back_13: -1647077753067856439
+      DIALGA_back_14: -1920029498572510397
+      DIALGA_back_15: -1323273888329382754
+      DIALGA_back_16: 3465724664436894014
+      DIALGA_back_17: -9005627392843476170
+      DIALGA_back_18: 7253659963056182900
+      DIALGA_back_19: -7874307346180494631
+      DIALGA_back_2: -7211289950063047979
+      DIALGA_back_20: -7273481228273576310
+      DIALGA_back_21: 6698342804812910797
+      DIALGA_back_22: 1857990490210378898
+      DIALGA_back_23: 7056296272280009870
+      DIALGA_back_24: 4163659540370348810
+      DIALGA_back_25: -1656373375620366458
+      DIALGA_back_26: 6921564343612358131
+      DIALGA_back_27: 1245874523356034679
+      DIALGA_back_28: -5719929026700560465
+      DIALGA_back_29: -8296479445555303092
+      DIALGA_back_3: -5691297181034001933
+      DIALGA_back_30: -2754330208345914190
+      DIALGA_back_31: 2055364622273432668
+      DIALGA_back_32: -8021546011982187750
+      DIALGA_back_33: 7962419436791008476
+      DIALGA_back_34: 4540685401344760308
+      DIALGA_back_35: -2212507995721812119
+      DIALGA_back_36: -9164387361154251486
+      DIALGA_back_37: -3439673182805638955
+      DIALGA_back_38: -7123167391167531697
+      DIALGA_back_39: 3003605697388370973
+      DIALGA_back_4: 5284522967185722210
+      DIALGA_back_40: -1416685464478680183
+      DIALGA_back_41: -1595875278551305604
+      DIALGA_back_42: -8722336613677938587
+      DIALGA_back_43: 1623995479389357593
+      DIALGA_back_44: -7851644138254863013
+      DIALGA_back_45: 1899505764500559073
+      DIALGA_back_46: 4616335204749672709
+      DIALGA_back_47: -2856015201543671683
+      DIALGA_back_48: 7943320426070296752
+      DIALGA_back_49: 717671138954422566
+      DIALGA_back_5: -7796313105037539859
+      DIALGA_back_50: 6563819201475349811
+      DIALGA_back_51: -3341042543856401167
+      DIALGA_back_52: -6239464890346764412
+      DIALGA_back_53: 4128629145065408394
+      DIALGA_back_54: 7511379203948616050
+      DIALGA_back_55: -515930464959478633
+      DIALGA_back_56: -5185309445664289333
+      DIALGA_back_57: 2938617879264192339
+      DIALGA_back_58: 3359756749765496511
+      DIALGA_back_59: -328194591768555120
+      DIALGA_back_6: -6378266415180650290
+      DIALGA_back_60: 8652161436558904434
+      DIALGA_back_61: 5033137661917450868
+      DIALGA_back_62: 4571719267029514091
+      DIALGA_back_63: 5753304656048380493
+      DIALGA_back_64: 5663300383033070790
+      DIALGA_back_65: 7937041829377602554
+      DIALGA_back_66: -6089687976366975755
+      DIALGA_back_67: 3245956033447229163
+      DIALGA_back_68: 8945924102438704737
+      DIALGA_back_7: -6267742650141859471
+      DIALGA_back_8: 8871110382104514901
+      DIALGA_back_9: 2774116330214519514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

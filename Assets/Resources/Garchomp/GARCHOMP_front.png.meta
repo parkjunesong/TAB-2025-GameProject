@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: 3cd55de5b479c17428391917e3a97d6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6054330629100938478
+    second: GARCHOMP_front_0
+  - first:
+      213: -7493934894564593027
+    second: GARCHOMP_front_1
+  - first:
+      213: 491134296205850853
+    second: GARCHOMP_front_2
+  - first:
+      213: 5789492739058877567
+    second: GARCHOMP_front_3
+  - first:
+      213: -4654294076502589348
+    second: GARCHOMP_front_4
+  - first:
+      213: 6626336779527484612
+    second: GARCHOMP_front_5
+  - first:
+      213: -8567866077102476156
+    second: GARCHOMP_front_6
+  - first:
+      213: -2710043608057116337
+    second: GARCHOMP_front_7
+  - first:
+      213: -7810775159200338006
+    second: GARCHOMP_front_8
+  - first:
+      213: -2471825335035889070
+    second: GARCHOMP_front_9
+  - first:
+      213: -5291354386132402944
+    second: GARCHOMP_front_10
+  - first:
+      213: 7483541370858196442
+    second: GARCHOMP_front_11
+  - first:
+      213: 8373584670450492348
+    second: GARCHOMP_front_12
+  - first:
+      213: 1959402508024139223
+    second: GARCHOMP_front_13
+  - first:
+      213: -7553909638073173698
+    second: GARCHOMP_front_14
+  - first:
+      213: 6802387206500489121
+    second: GARCHOMP_front_15
+  - first:
+      213: 6294845188531424394
+    second: GARCHOMP_front_16
+  - first:
+      213: -5539709443801505637
+    second: GARCHOMP_front_17
+  - first:
+      213: 6851870122698681162
+    second: GARCHOMP_front_18
+  - first:
+      213: -8370907790989950062
+    second: GARCHOMP_front_19
+  - first:
+      213: 835942902745278715
+    second: GARCHOMP_front_20
+  - first:
+      213: -1818410576574453887
+    second: GARCHOMP_front_21
+  - first:
+      213: -5064487519478470651
+    second: GARCHOMP_front_22
+  - first:
+      213: 7317182447249269915
+    second: GARCHOMP_front_23
+  - first:
+      213: -5715391234977395148
+    second: GARCHOMP_front_24
+  - first:
+      213: -2906194790304276124
+    second: GARCHOMP_front_25
+  - first:
+      213: 7756430024977926279
+    second: GARCHOMP_front_26
+  - first:
+      213: -6738706455871645449
+    second: GARCHOMP_front_27
+  - first:
+      213: 3014527422756336213
+    second: GARCHOMP_front_28
+  - first:
+      213: 2698626505800321223
+    second: GARCHOMP_front_29
+  - first:
+      213: -8547286010496980138
+    second: GARCHOMP_front_30
+  - first:
+      213: 8630135123841063975
+    second: GARCHOMP_front_31
+  - first:
+      213: -2598710518354511472
+    second: GARCHOMP_front_32
+  - first:
+      213: -3060040798367027598
+    second: GARCHOMP_front_33
+  - first:
+      213: -5463633531991518944
+    second: GARCHOMP_front_34
+  - first:
+      213: 7320198123724650910
+    second: GARCHOMP_front_35
+  - first:
+      213: -2051783657874371447
+    second: GARCHOMP_front_36
+  - first:
+      213: -1664932572830173891
+    second: GARCHOMP_front_37
+  - first:
+      213: 4612392378081561483
+    second: GARCHOMP_front_38
+  - first:
+      213: 6802531291021737718
+    second: GARCHOMP_front_39
+  - first:
+      213: -7298291491904916718
+    second: GARCHOMP_front_40
+  - first:
+      213: -2449529685870862987
+    second: GARCHOMP_front_41
+  - first:
+      213: 1087628976841660573
+    second: GARCHOMP_front_42
+  - first:
+      213: -5863245368313292327
+    second: GARCHOMP_front_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GARCHOMP_front_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4245441ad450450800000000000000
+      internalID: 6054330629100938478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72b29ffae1300890800000000000000
+      internalID: -7493934894564593027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e87c5e4a0cd0d600800000000000000
+      internalID: 491134296205850853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74ce4dd8f8685050800000000000000
+      internalID: 5789492739058877567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50cbd96230a86fb0800000000000000
+      internalID: -4654294076502589348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c477d1713a75fb50800000000000000
+      internalID: 6626336779527484612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484ff278233d81980800000000000000
+      internalID: -8567866077102476156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_7
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4900f762bdf36ad0800000000000000
+      internalID: -2710043608057116337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_8
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf2b6f306d8a9390800000000000000
+      internalID: -7810775159200338006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_9
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aff5e34ff42bdd0800000000000000
+      internalID: -2471825335035889070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_10
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d7fd978355196b0800000000000000
+      internalID: -5291354386132402944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_11
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add41ff2a31ead760800000000000000
+      internalID: 7483541370858196442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3abd284e2f43470800000000000000
+      internalID: 8373584670450492348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_13
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddc9ce1332313b10800000000000000
+      internalID: 1959402508024139223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_14
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39bf3dd43f1b2790800000000000000
+      internalID: -7553909638073173698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a79f1caf1fe66e50800000000000000
+      internalID: 6802387206500489121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_16
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c0e72f858cb5750800000000000000
+      internalID: 6294845188531424394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_17
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90a55b8c9ffe13b0800000000000000
+      internalID: -5539709443801505637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_18
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b2196e29bb61f50800000000000000
+      internalID: 6851870122698681162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_19
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2938e7e07bf84db80800000000000000
+      internalID: -8370907790989950062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_20
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf824aa14add99b00800000000000000
+      internalID: 835942902745278715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_21
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18767770735b3c6e0800000000000000
+      internalID: -1818410576574453887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_22
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50826101f6357b9b0800000000000000
+      internalID: -5064487519478470651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_23
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94240deaaadb8560800000000000000
+      internalID: 7317182447249269915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_24
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e8ac604f9dea0b0800000000000000
+      internalID: -5715391234977395148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_25
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461a2d36c3f1ba7d0800000000000000
+      internalID: -2906194790304276124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_26
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788cbfb230064ab60800000000000000
+      internalID: 7756430024977926279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_27
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8932c7e2e4b72a0800000000000000
+      internalID: -6738706455871645449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_28
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552b01728b0c5d920800000000000000
+      internalID: 3014527422756336213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_29
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c88ea35282737520800000000000000
+      internalID: 2698626505800321223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_30
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b69aea8a0f16980800000000000000
+      internalID: -8547286010496980138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_31
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c1b24bb2664c770800000000000000
+      internalID: 8630135123841063975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_32
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09978675d868febd0800000000000000
+      internalID: -2598710518354511472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_33
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e612f4b1d8885d0800000000000000
+      internalID: -3060040798367027598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_34
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0219bbe00464d24b0800000000000000
+      internalID: -5463633531991518944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_35
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99b612d861969560800000000000000
+      internalID: 7320198123724650910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_36
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c427c42a99683e0800000000000000
+      internalID: -2051783657874371447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_37
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35fa7d65a8f4e8e0800000000000000
+      internalID: -1664932572830173891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_38
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b454c2e62820040800000000000000
+      internalID: 4612392378081561483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_39
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe74d6fa22776e50800000000000000
+      internalID: 6802531291021737718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_40
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21370cd5e8247ba90800000000000000
+      internalID: -7298291491904916718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_41
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d94e69ab5810ed0800000000000000
+      internalID: -2449529685870862987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_42
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98911cbac8081f00800000000000000
+      internalID: 1087628976841660573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GARCHOMP_front_43
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 0
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d95bbef66191aea0800000000000000
+      internalID: -5863245368313292327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a28e2769170d60f4aa94482c4717afc2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GARCHOMP_front_0: 6054330629100938478
+      GARCHOMP_front_1: -7493934894564593027
+      GARCHOMP_front_10: -5291354386132402944
+      GARCHOMP_front_11: 7483541370858196442
+      GARCHOMP_front_12: 8373584670450492348
+      GARCHOMP_front_13: 1959402508024139223
+      GARCHOMP_front_14: -7553909638073173698
+      GARCHOMP_front_15: 6802387206500489121
+      GARCHOMP_front_16: 6294845188531424394
+      GARCHOMP_front_17: -5539709443801505637
+      GARCHOMP_front_18: 6851870122698681162
+      GARCHOMP_front_19: -8370907790989950062
+      GARCHOMP_front_2: 491134296205850853
+      GARCHOMP_front_20: 835942902745278715
+      GARCHOMP_front_21: -1818410576574453887
+      GARCHOMP_front_22: -5064487519478470651
+      GARCHOMP_front_23: 7317182447249269915
+      GARCHOMP_front_24: -5715391234977395148
+      GARCHOMP_front_25: -2906194790304276124
+      GARCHOMP_front_26: 7756430024977926279
+      GARCHOMP_front_27: -6738706455871645449
+      GARCHOMP_front_28: 3014527422756336213
+      GARCHOMP_front_29: 2698626505800321223
+      GARCHOMP_front_3: 5789492739058877567
+      GARCHOMP_front_30: -8547286010496980138
+      GARCHOMP_front_31: 8630135123841063975
+      GARCHOMP_front_32: -2598710518354511472
+      GARCHOMP_front_33: -3060040798367027598
+      GARCHOMP_front_34: -5463633531991518944
+      GARCHOMP_front_35: 7320198123724650910
+      GARCHOMP_front_36: -2051783657874371447
+      GARCHOMP_front_37: -1664932572830173891
+      GARCHOMP_front_38: 4612392378081561483
+      GARCHOMP_front_39: 6802531291021737718
+      GARCHOMP_front_4: -4654294076502589348
+      GARCHOMP_front_40: -7298291491904916718
+      GARCHOMP_front_41: -2449529685870862987
+      GARCHOMP_front_42: 1087628976841660573
+      GARCHOMP_front_43: -5863245368313292327
+      GARCHOMP_front_5: 6626336779527484612
+      GARCHOMP_front_6: -8567866077102476156
+      GARCHOMP_front_7: -2710043608057116337
+      GARCHOMP_front_8: -7810775159200338006
+      GARCHOMP_front_9: -2471825335035889070
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

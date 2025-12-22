@@ -10,7 +10,10 @@ public class EnemyUnit : Unit
         Data = Instantiate(data);
         Status = new Unit_Status(Data);
         Skill  = new Unit_Skill(Data, this);
-        GetComponent<SpriteRenderer>().sprite = data.FrontSprite;
+        var animator = GetComponent<Animator>();
+        if (animator == null) animator = gameObject.AddComponent<Animator>();
+        animator.runtimeAnimatorController = data.FrontAnimator;
+
 
         transform.position = new Vector2(5.2f, -4.7f);
         transform.localScale = new Vector3(6, 7, 1);
