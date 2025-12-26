@@ -52,4 +52,17 @@ public class NPCMovement : MovingObject
         }
         return Vector2.zero;
     }
+    public void StopMoving()
+    {
+        if (moveStepCoroutine != null)
+            StopCoroutine(moveStepCoroutine);
+
+        StopAllCoroutines();
+        isMoving = false;
+    }
+    public void ResumeMoving()
+    {
+        StartCoroutine(MoveRoutine());
+    }
+
 }

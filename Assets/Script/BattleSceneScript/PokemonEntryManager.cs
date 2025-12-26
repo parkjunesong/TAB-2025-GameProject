@@ -13,7 +13,7 @@ public class PokemonEntryManager : MonoBehaviour
 
             if (i < BattleManager.Instance.PlayerUnits.Count)
             {
-                content.GetChild(1).GetComponent<Image>().sprite = BattleManager.Instance.PlayerUnits[i].Data.FrontSprite;
+                content.GetChild(1).GetComponent<Image>().sprite = BattleManager.Instance.PlayerUnits[i].Data.PartyIcon;
                 content.GetChild(2).GetComponent<Text>().text = BattleManager.Instance.PlayerUnits[i].Data.Name;
                 content.GetChild(3).GetComponent<Text>().text = "Lv. " + BattleManager.Instance.PlayerUnits[i].Status.Level;
                 content.GetChild(4).GetComponent<Text>().text =

@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 
 public class NPCBattleTrigger : MonoBehaviour
 {
+    public List<UnitData> enemyUnits = new();
+    public List<string> dialogueLines;
     public enum FacingDirection { Up, Down, Left, Right }
     public FacingDirection facing = FacingDirection.Right;
 
@@ -54,9 +57,18 @@ public class NPCBattleTrigger : MonoBehaviour
             {
                 hasTriggered = true;
                 hit.collider.GetComponent<PlayerMovement>().canMove = false; // 해당 부분을 통하여 배틀에 걸렸을때 플레이어가 움직이지 못하도록 함
-                StartCoroutine(StartBattle());               
+                MakePlayerLookAtNPC(hit.collider.transform);
+                DialogueManager.Instance.StartDialogue(dialogueLines, false);
+                StartCoroutine(WaitDialogueThenBattle());              
             }
         }
+    }
+
+    IEnumerator WaitDialogueThenBattle()
+    {
+        while (DialogueManager.Instance.TextPanel.activeSelf)
+            yield return null;
+        StartCoroutine(StartBattle());
     }
 
     private void ApplyFacingToAnimator()
@@ -104,6 +116,41 @@ public class NPCBattleTrigger : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         ScreenFader.Instance.StartCoroutine(ScreenFader.Instance.BattleEncount());
         yield return new WaitForSeconds(2.5f);
+        var BUM = GameObject.Find("DataManager").GetComponent<BattleUnitManager>();
+        BUM.EnemyUnitData.Clear();
+        foreach (var unit in enemyUnits)
+            BUM.EnemyUnitData.Add(unit);
         SceneManager.LoadScene(battleSceneName);
     }
+    private void MakePlayerLookAtNPC(Transform player)
+    {
+        Animator playerAnim = player.GetComponent<Animator>();
+        if (playerAnim == null) return;
+
+        switch (facing)
+        {
+            case FacingDirection.Up:
+                playerAnim.SetFloat("MoveX", 0);
+                playerAnim.SetFloat("MoveY", -1);
+                break;
+
+            case FacingDirection.Down:
+                playerAnim.SetFloat("MoveX", 0);
+                playerAnim.SetFloat("MoveY", 1);
+                break;
+
+            case FacingDirection.Left:
+                playerAnim.SetFloat("MoveX", 1);
+                playerAnim.SetFloat("MoveY", 0);
+                break;
+
+            case FacingDirection.Right:
+                playerAnim.SetFloat("MoveX", -1);
+                playerAnim.SetFloat("MoveY", 0);
+                break;
+        }
+
+        playerAnim.SetBool("IsMoving", false);
+    }
+
 }

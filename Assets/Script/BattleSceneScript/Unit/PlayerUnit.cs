@@ -10,7 +10,9 @@ public class PlayerUnit : Unit
         Data = Instantiate(data);
         Status = new Unit_Status(Data);
         Skill = new Unit_Skill(Data, this);
-        GetComponent<SpriteRenderer>().sprite = data.BackSprite;
+        var animator = GetComponent<Animator>();
+        if (animator == null) animator = gameObject.AddComponent<Animator>();
+        animator.runtimeAnimatorController = data.BackAnimator;
 
         transform.position = new Vector2(-4, -9.5f);
         transform.localScale = new Vector3(7, 8, 1);
