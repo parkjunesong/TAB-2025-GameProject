@@ -15,5 +15,5 @@ MonoBehaviour:
   Skill_Type: {fileID: 11400000, guid: e4b4bda9956b23049bf88d212e50bb02, type: 2}
   Skill_MaxPP: 10
   Skill_Name: "\uC6A9\uC758\uD30C\uB3D9"
-  Skill_SFX: {fileID: 8300000, guid: 5b7f8973ef31d6c46ada4a713139eb63, type: 3}
-  Skill_VFX: {fileID: 100002, guid: 1cb4b58dd69a89e428e0b9472e64476b, type: 3}
+  Skill_SFX: {fileID: 8300000, guid: 61c5fcd572847e046b7a40fff4d14138, type: 3}
+  Skill_VFX: {fileID: 100010, guid: c95f9929c1f1340409b6247bb7b04785, type: 3}

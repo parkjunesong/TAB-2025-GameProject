@@ -9,7 +9,7 @@ public class Unit_Status
     public int AT, SP, HP, DF;
     public int maxHP;
 
-    public Unit_Status(UnitData data, int level = 1)
+    public Unit_Status(UnitData data, int level = 50)
     {
         Level = level;
         Type = data.Type;

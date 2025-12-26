@@ -9,7 +9,7 @@ public class SkillManager : MonoBehaviour
     public GameObject[] skillUi = new GameObject[4];
 
     public void UpdateUi()
-    {
+    {       
         for (int i = 0; i < 4; i++)
         {
             SkillData skill = BattleManager.Instance.PlayerUnits[0].Skill.assignedSkills[i];

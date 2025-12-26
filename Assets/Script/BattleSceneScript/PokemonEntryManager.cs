@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public class PokemonEntryManager : MonoBehaviour
 {
@@ -26,17 +29,21 @@ public class PokemonEntryManager : MonoBehaviour
         }
     }
 
-    public void ChangePlayerUnit(int index)
+    public async void ChangePlayerUnit(int index)
     {
         if(index >= BattleManager.Instance.PlayerUnits.Count) return;
 
         Unit targetUnit = BattleManager.Instance.PlayerUnits[index];
         if (targetUnit.isDead || targetUnit == BattleManager.Instance.PlayerUnits[0]) return;
 
+        DialogueManager.Instance.StartDialogue(new List<string> { BattleManager.Instance.PlayerUnits[0].Data.Name + ", 돌아와!" });
         BattleManager.Instance.PlayerUnits[0].gameObject.SetActive(false);
         BattleManager.Instance.PlayerUnits[index] = BattleManager.Instance.PlayerUnits[0];
         BattleManager.Instance.PlayerUnits[0] = targetUnit;
         BattleManager.Instance.PlayerUnits[0].gameObject.SetActive(true);
+
+        await Task.Delay(3000);
+        DialogueManager.Instance.StartDialogue(new List<string> { "가라, " + BattleManager.Instance.PlayerUnits[0].Data.Name + "!" });
 
         UpdateUi();
         GetComponent<SkillManager>().UpdateUi();

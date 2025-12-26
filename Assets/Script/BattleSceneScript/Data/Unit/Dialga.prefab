@@ -106,11 +106,11 @@ MonoBehaviour:
   _SP: 90
   _HP: 100
   _DF: 120
-  PartyIcon: {fileID: 0}
+  PartyIcon: {fileID: 5508556960472429608, guid: 28b8b8bdfa279a94991d88da59a94466, type: 3}
   FrontAnimator: {fileID: 9100000, guid: a97bcb23ba0203949a1dd66d2d1a4a16, type: 2}
   BackAnimator: {fileID: 9100000, guid: 537eccef709a6af4bab00ff34bae074b, type: 2}
   SkillList:
-  - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
+  - {fileID: 11400000, guid: fdad7f738da3aad4b85aa4e6986b40de, type: 2}
   - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
   - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}
   - {fileID: 11400000, guid: 28206c28b422fe248b9709fc048013a9, type: 2}

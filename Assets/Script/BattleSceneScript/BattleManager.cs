@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class BattleManager : MonoBehaviour
 {
@@ -23,7 +25,7 @@ public class BattleManager : MonoBehaviour
         GetComponent<PokemonEntryManager>().UpdateUi();
         GetComponent<BattleUiManager>().UpdateUi();
     }
-    public void BattleStart()
+    public async void BattleStart()
     {
         BattleUnitManager BUM = GameObject.Find("DataManager").GetComponent<BattleUnitManager>();
         foreach (UnitData data in BUM.PlayerUnitData)
@@ -40,6 +42,11 @@ public class BattleManager : MonoBehaviour
         }
         PlayerUnits[0].gameObject.SetActive(true);
         EnemyUnits[0].gameObject.SetActive(true);
+
+        DialogueManager.Instance.StartDialogue(new List<string> { EnemyUnits[0].Data.Name + "가 나타났다!" });
+
+        await Task.Delay(3000);
+
         TurnStart();
     }
 
@@ -72,6 +79,8 @@ public class BattleManager : MonoBehaviour
             GetComponent<BattleUiManager>().UpdateUi();
             yield return new WaitForSeconds(4f);
 
+            GetComponent<PokemonEntryManager>().UpdateUi();
+            GetComponent<BattleUiManager>().UpdateUi();
             DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name + "은(는) 무엇을 할까?" });
             yield return new WaitUntil(() => isPlayerActioned);
             GetComponent<PokemonEntryManager>().UpdateUi();
@@ -89,22 +98,28 @@ public class BattleManager : MonoBehaviour
         EnemyUnits[0].TurnEnd();
         TurnStart();
     }  
-    public void BattleEnd(string team)
+    public async void BattleEnd(string team)
     {
         if (team == "Player")
         {
-            Debug.Log("Enemy Win");
+            DialogueManager.Instance.StartDialogue(new List<string> { "배틀에서 패배했다..." });
+            Application.Quit();
         }
         else if (team == "Enemy")
         {
-            Debug.Log("Player Win");
+            DialogueManager.Instance.StartDialogue(new List<string> { "배틀에서 승리했다!" });
             AudioManager.Instance.PlayVictoryTrainer();
+            StopAllCoroutines();
+            await Task.Delay(1000);
+            SceneManager.LoadScene("Tilemap Scene");
         }
     }
-    public void OnUnitDied(List<Unit> targetList)
+    public async void OnUnitDied(List<Unit> targetList)
     {
         Unit tmp = null;
         bool isAllDead = true;
+        DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name + "은(는) 쓰러졌다!" });
+        await Task.Delay(1000);
 
         foreach (Unit unit in targetList)
         {
@@ -117,13 +132,18 @@ public class BattleManager : MonoBehaviour
         }
         if (isAllDead) BattleEnd(targetList[0].Team);
         else
-        {
+        {           
             targetList.Add(targetList[0]);
             targetList.RemoveAt(0);
             targetList.Remove(tmp);
             targetList.Insert(0, tmp);
             targetList[0].gameObject.SetActive(true);
+
+            DialogueManager.Instance.StartDialogue(new List<string> { "가라, " + PlayerUnits[0].Data.Name + "!" });
+            await Task.Delay(1000);
+
             GetComponent<PokemonEntryManager>().UpdateUi();
+            GetComponent<SkillManager>().UpdateUi();
         }
     }
     public List<Unit> allUnits()

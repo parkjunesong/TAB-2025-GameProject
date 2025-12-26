@@ -27,7 +27,7 @@ public class Unit_Skill
 
         for(int i = 0; i < 4; i++)
         {
-            assignSKillNo(i, 0);
+            assignSKillNo(i, i);
         }   
     }
 
