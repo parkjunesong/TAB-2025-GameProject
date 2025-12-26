@@ -26,7 +26,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip cursor;
     [SerializeField] private AudioClip exclaim;
     [SerializeField] private AudioClip grass;
-    
+
+    [SerializeField] private AudioClip DIALGA;
+    [SerializeField] private AudioClip GARCHOMP;
+    [SerializeField] private AudioClip PACHIRISU;
+    [SerializeField] private AudioClip PIKACHU;
+
 
     void Awake()
     {
@@ -77,4 +82,12 @@ public class AudioManager : MonoBehaviour
     public void PlayCursor() => PlaySfx(cursor);
     public void PlayExclaim() => PlaySfx(exclaim);
     public void PlayGrass() => PlaySfx(grass);
+
+    public void PlayPokemon(string name)
+    {
+        if (name == "디아루가") PlaySfx(DIALGA);
+        if (name == "한카리아스") PlaySfx(GARCHOMP);
+        if (name == "파치리스") PlaySfx(PACHIRISU);
+        if (name == "피카츄") PlaySfx(PIKACHU);
+    }
 }

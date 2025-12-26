@@ -43,10 +43,12 @@ public class BattleManager : MonoBehaviour
         PlayerUnits[0].gameObject.SetActive(true);
         EnemyUnits[0].gameObject.SetActive(true);
 
+        AudioManager.Instance.PlayPokemon(EnemyUnits[0].Data.Name);
         DialogueManager.Instance.StartDialogue(new List<string> { EnemyUnits[0].Data.Name + "가 나타났다!" });
-
+        await Task.Delay(2000);
+        AudioManager.Instance.PlayPokemon(PlayerUnits[0].Data.Name);
+        DialogueManager.Instance.StartDialogue(new List<string> { "가라, " + PlayerUnits[0].Data.Name + "!" });
         await Task.Delay(3000);
-
         TurnStart();
     }
 
@@ -139,6 +141,7 @@ public class BattleManager : MonoBehaviour
             targetList.Insert(0, tmp);
             targetList[0].gameObject.SetActive(true);
 
+            AudioManager.Instance.PlayPokemon(targetList[0].Data.Name);
             DialogueManager.Instance.StartDialogue(new List<string> { "가라, " + targetList[0].Data.Name + "!" });
             await Task.Delay(1000);
 

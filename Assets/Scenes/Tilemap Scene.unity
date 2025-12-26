@@ -25893,6 +25893,10 @@ MonoBehaviour:
   cursor: {fileID: 8300000, guid: 5da160fa93f9c2c4a840142b0274a5b1, type: 3}
   exclaim: {fileID: 8300000, guid: c87fa0595fbad7c4986102c4a957b1fa, type: 3}
   grass: {fileID: 8300000, guid: 9995a4d7b932d68478df38349b32823b, type: 3}
+  DIALGA: {fileID: 8300000, guid: 8612994e622a7444db7148ca3c112afc, type: 3}
+  GARCHOMP: {fileID: 8300000, guid: 3ada6d4c922fc11488549d603eea8421, type: 3}
+  PACHIRISU: {fileID: 8300000, guid: 249afc477a7f6744caee3c1e342dee3c, type: 3}
+  PIKACHU: {fileID: 8300000, guid: 3e033bd375ee91040aca63988701ae7b, type: 3}
 --- !u!4 &1081544059
 Transform:
   m_ObjectHideFlags: 0
