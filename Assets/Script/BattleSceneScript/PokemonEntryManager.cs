@@ -43,6 +43,7 @@ public class PokemonEntryManager : MonoBehaviour
         BattleManager.Instance.PlayerUnits[0].gameObject.SetActive(true);
 
         await Task.Delay(3000);
+        AudioManager.Instance.PlayPokemon(BattleManager.Instance.PlayerUnits[0].Data.Name);
         DialogueManager.Instance.StartDialogue(new List<string> { "°¡¶ó, " + BattleManager.Instance.PlayerUnits[0].Data.Name + "!" });
 
         UpdateUi();
