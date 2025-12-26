@@ -37,12 +37,13 @@ public class AudioManager : MonoBehaviour
         bgmSource = gameObject.AddComponent<AudioSource>();
         bgmSource.loop = true;
         bgmSource.playOnAwake = false;
+        bgmSource.volume = 0.8f;
 
         sfxSource = gameObject.AddComponent<AudioSource>();
         sfxSource.loop = false;
         sfxSource.playOnAwake = false;
         sfxSource.spatialBlend = 0f;
-        sfxSource.volume = 0.6f;
+        sfxSource.volume = 0.8f;
     }
     private void Start()
     {

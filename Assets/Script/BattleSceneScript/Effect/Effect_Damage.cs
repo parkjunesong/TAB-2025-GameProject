@@ -32,8 +32,16 @@ public class Effect_Damage : Effect_Base
             if (type == target.Status.Type) multiplier = 0f;
         damage *= multiplier;
 
-        if (multiplier == 0f) AudioManager.Instance.PlayDamageWeak();
-        else if (multiplier > 1f) AudioManager.Instance.PlayDamageSuper();      
+        if (multiplier == 0f) 
+        { 
+            AudioManager.Instance.PlayDamageWeak();
+            DialogueManager.Instance.StartDialogue(new List<string> { "효과가 없었다" });
+        }
+        else if (multiplier > 1f) 
+        { 
+            AudioManager.Instance.PlayDamageSuper();
+            DialogueManager.Instance.StartDialogue(new List<string> { "효과는 굉장했다!" });
+        }
         else AudioManager.Instance.PlayDamageNormal();
 
 
