@@ -40,7 +40,7 @@ public class Effect_Damage : Effect_Base
         else if (multiplier > 1f) 
         { 
             AudioManager.Instance.PlayDamageSuper();
-            DialogueManager.Instance.StartDialogue(new List<string> { "효과는 굉장했다!" });
+            //DialogueManager.Instance.StartDialogue(new List<string> { "효과는 굉장했다!" });
         }
         else AudioManager.Instance.PlayDamageNormal();
 

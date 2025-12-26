@@ -118,7 +118,7 @@ public class BattleManager : MonoBehaviour
     {
         Unit tmp = null;
         bool isAllDead = true;
-        DialogueManager.Instance.StartDialogue(new List<string> { PlayerUnits[0].Data.Name + "은(는) 쓰러졌다!" });
+        DialogueManager.Instance.StartDialogue(new List<string> { targetList[0].Data.Name + "은(는) 쓰러졌다!" });
         await Task.Delay(1000);
 
         foreach (Unit unit in targetList)
@@ -139,7 +139,7 @@ public class BattleManager : MonoBehaviour
             targetList.Insert(0, tmp);
             targetList[0].gameObject.SetActive(true);
 
-            DialogueManager.Instance.StartDialogue(new List<string> { "가라, " + PlayerUnits[0].Data.Name + "!" });
+            DialogueManager.Instance.StartDialogue(new List<string> { "가라, " + targetList[0].Data.Name + "!" });
             await Task.Delay(1000);
 
             GetComponent<PokemonEntryManager>().UpdateUi();
